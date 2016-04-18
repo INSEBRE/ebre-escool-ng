@@ -292,15 +292,15 @@ img{
 	transition: all 0.5s;
 }
 .logo {
-	height: 100px;  
-	width: 85px;
+	height: 70px;
+	width: 170px;
 	margin-right: 45px;
-	margin-top: -1px;
+	margin-top: 5%;
 	padding: 0;
 }
 .logo-compressed {
-	height: 80px;  
-	width: 70px;
+	height: 70px;
+	width: 170px;
 }
 .logo img {
 	height: 100%;
@@ -308,7 +308,7 @@ img{
 }
 #navbar {
 	float: left;
-	width: 83%;
+	width: 70%;
 }
 .main-nav {
 	display: inline-block;
@@ -381,7 +381,7 @@ img{
 	cursor: text;
 }
 .search-area input[type="submit"] {
-	background-image: url("assets/images/search-icon.png");
+	background-image: url("/img/search-icon.png");
 	background-position: center center;
 	background-repeat: no-repeat;
 	border: medium none;

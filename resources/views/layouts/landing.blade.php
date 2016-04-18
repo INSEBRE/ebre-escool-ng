@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Institut de l'Ebre : Home</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
+    <link rel="shortcut icon" type="image/icon" href="{{ asset('/img/favicon.ico') }}"/>
     <!-- Font Awesome -->
     <link href="{{asset('/css/font-awesome.css')}}" rel="stylesheet">
     <!-- Bootstrap -->
@@ -22,7 +22,7 @@
     <link id="switcher" href="{{asset('/css/lite-blue-theme.css')}}" rel="stylesheet">
 
     <!-- Main Style -->
-    <link href="{{asset("/css/style_landing.css")}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('/css/style_landing.css')}}" type="text/css">
 
     <!-- Fonts -->
     <!-- Open Sans for body font -->
@@ -54,20 +54,18 @@
 <header id="header">
     <div class="header-inner">
         <!-- Header image -->
-        <img src="assets/images/header-bg.jpg" alt="img">
+        <img src="{{asset('/img/header-bg.jpg')}}" alt="img">
         <div class="header-overlay">
             <div class="header-content">
                 <!-- Start header content slider -->
-                <h2 class="header-slide">WE GENERATE
-                    <span>MOST CREATIVE</span>
-                    <span>MOST Design</span>
-                    <span>MOST Valuable</span>
-                    IDEA</h2>
+                <h2 class="header-slide">ebre-escool ng
+                    <span>Intranet</span>
+                    de l'Institut de l'Ebre</h2>
                 <!-- End header content slider -->
                 <!-- Header btn area -->
                 <div class="header-btn-area">
-                    <a class="knowmore-btn" href="#">KNOW MORE</a>
-                    <a class="download-btn" href="#">DOWNLOAD Theme</a>
+                    <a class="knowmore-btn" href="{{ url('/register') }}">Registra't</a>
+                    <a class="download-btn" href="{{ url('/login') }}">Loga't</a>
                 </div>
             </div>
         </div>
@@ -88,11 +86,11 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- LOGO -->
-                <a class="navbar-brand logo" href="index.html"><img src="assets/images/logo.jpg" alt="logo"></a>
+                <a class="navbar-brand logo" href="#"><img src="{{ asset('/img/logo.png') }}" alt="logo"></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul id="top-menu" class="nav navbar-nav main-nav menu-scroll">
-                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="active"><a href="#">Home</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#team">TEAM</a></li>
                     <li><a href="#service">SERVICE</a></li>
@@ -101,10 +99,18 @@
                     <li><a href="#from-blog">BLOG </a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    @if (Auth::guest())
+                        <li><a href="{{ url('/login') }}">Login</a></li>
+                        <li><a href="{{ url('/register') }}">Register</a></li>
+                    @else
+                        <li><a href="/home">{{ Auth::user()->name }}</a></li>
+                    @endif
+                </ul>
             </div><!--/.nav-collapse -->
             <div class="search-area">
                 <form action="">
-                    <input id="search" name="search" type="text" placeholder="What're you looking for ?">
+                    <input id="search" name="search" type="text" placeholder="Introdueix el text a cercar...">
                     <input id="search_submit" value="Rechercher" type="submit">
                 </form>
             </div>
@@ -767,30 +773,30 @@
 </section>
 <!-- End from blog section -->
 
-<section id="client">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="client-area">
-                    <ul class="client-table">
-                        <li><img src="assets/images/envato.png" alt="client logo"></li>
-                        <li><img src="assets/images/google.png" alt="client logo"></li>
-                        <li><img src="assets/images/amazon.png" alt="client logo"></li>
-                        <li><img src="assets/images/discovery.png" alt="client logo"></li>
-                        <li><img src="assets/images/envato.png" alt="client logo"></li>
-                        <li><img src="assets/images/tuenti.png" alt="client logo"></li>
-                        <li><img src="assets/images/envato.png" alt="client logo"></li>
-                        <li><img src="assets/images/google.png" alt="client logo"></li>
-                        <li><img src="assets/images/amazon.png" alt="client logo"></li>
-                        <li><img src="assets/images/discovery.png" alt="client logo"></li>
-                        <li><img src="assets/images/envato.png" alt="client logo"></li>
-                        <li><img src="assets/images/tuenti.png" alt="client logo"></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+{{--<section id="client">--}}
+    {{--<div class="container">--}}
+        {{--<div class="row">--}}
+            {{--<div class="col-md-12">--}}
+                {{--<div class="client-area">--}}
+                    {{--<ul class="client-table">--}}
+                        {{--<li><img src="assets/images/envato.png" alt="client logo"></li>--}}
+                        {{--<li><img src="assets/images/google.png" alt="client logo"></li>--}}
+                        {{--<li><img src="assets/images/amazon.png" alt="client logo"></li>--}}
+                        {{--<li><img src="assets/images/discovery.png" alt="client logo"></li>--}}
+                        {{--<li><img src="assets/images/envato.png" alt="client logo"></li>--}}
+                        {{--<li><img src="assets/images/tuenti.png" alt="client logo"></li>--}}
+                        {{--<li><img src="assets/images/envato.png" alt="client logo"></li>--}}
+                        {{--<li><img src="assets/images/google.png" alt="client logo"></li>--}}
+                        {{--<li><img src="assets/images/amazon.png" alt="client logo"></li>--}}
+                        {{--<li><img src="assets/images/discovery.png" alt="client logo"></li>--}}
+                        {{--<li><img src="assets/images/envato.png" alt="client logo"></li>--}}
+                        {{--<li><img src="assets/images/tuenti.png" alt="client logo"></li>--}}
+                    {{--</ul>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+{{--</section>--}}
 <!-- Start Contact section -->
 <section id="contact">
     <div class="container">
@@ -840,9 +846,9 @@
 </section>
 <!-- End Contact section -->
 <!-- Start Google Map -->
-<section id="google-map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d6303.67022361714!2d144.955652!3d-37.817331!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d-37.8173306!2d144.9556518!5e0!3m2!1sen!2sbd!4v1442411159706" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
-</section>
+{{--<section id="google-map">--}}
+    {{--<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d6303.67022361714!2d144.955652!3d-37.817331!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d-37.8173306!2d144.9556518!5e0!3m2!1sen!2sbd!4v1442411159706" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>--}}
+{{--</section>--}}
 <!-- End Google Map -->
 
 <!-- Start Footer -->
@@ -852,7 +858,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="footer-top-area">
-                        <a class="footer-logo" href="#"><img src="assets/images/logo.jpg" alt="Logo"></a>
+                        <a class="footer-logo" href="#"><img src="{{asset('/css/logo.png')}}" alt="Logo"></a>
                         <div class="footer-social">
                             <a class="facebook" href="#"><span class="fa fa-facebook"></span></a>
                             <a class="twitter" href="#"><span class="fa fa-twitter"></span></a>
@@ -867,7 +873,7 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <p>Designed by <a href="http://www.markups.io/">MarkUps.io</a></p>
+        <p>Designed by <a href="http://paolodavila.com">Paolo Dàvila</a> & <a href="https://ebrematic.com">Roger Melich</a></p>
     </div>
 </footer>
 <!-- End Footer -->
@@ -878,9 +884,9 @@
 <!-- Bootstrap -->
 <script src="{{asset('/js/bootstrap.js')}}"></script>
 <!-- Slick Slider -->
-<script type="text/javascript" src="{{asset('/js/slick.js')}}{}}assets/"></script>
+<script type="text/javascript" src="{{asset('/js/slick.js')}}"></script>
 <!-- Counter -->
-<script type="text/javascript" src="{{asset('/js/waypoints.js')}}assets"></script>
+<script type="text/javascript" src="{{asset('/js/waypoints.js')}}"></script>
 <script type="text/javascript" src="{{asset('/js/jquery.counterup.js')}}"></script>
 <!-- mixit slider -->
 <script type="text/javascript" src="{{asset('/js/jquery.mixitup.js')}}"></script>

@@ -293,8 +293,8 @@ img{
 }
 .logo {
 	height: 70px;
-	width: 170px;
-	margin-right: 45px;
+	width: 190px;
+	margin-right: 5px;
 	margin-top: 5%;
 	padding: 0;
 }
@@ -308,7 +308,7 @@ img{
 }
 #navbar {
 	float: left;
-	width: 70%;
+	width: 75%;
 }
 .main-nav {
 	display: inline-block;
@@ -346,6 +346,7 @@ img{
 .navbar-default .navbar-nav > li > a:focus {
     background-color: transparent;
 }
+
 .search-area {
 	display: inline-block;
 	float: right;
@@ -1486,7 +1487,7 @@ img{
 /*--------------------*/
 
 #contact {
-	background-image: url("assets/images/contact-bg.jpg");
+	background-image: url("/img/contact-bg.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;

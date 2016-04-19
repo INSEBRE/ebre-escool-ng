@@ -95,16 +95,14 @@
                     <li><a href="#team">TEAM</a></li>
                     <li><a href="#service">SERVICE</a></li>
                     <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#pricing-table">PRICE </a></li>
-                    <li><a href="#from-blog">BLOG </a></li>
+                    {{--<li><a href="#pricing-table">PRICE </a></li>--}}
+                    {{--<li><a href="#from-blog">BLOG </a></li>--}}
                     <li><a href="#contact">CONTACT</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
                     @if (Auth::guest())
-                        <li><a href="{{ url('/login') }}">Login</a></li>
-                        <li><a href="{{ url('/register') }}">Register</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
                     @else
-                        <li><a href="/home">{{ Auth::user()->name }}</a></li>
+                        <li><a href="#">{{ Auth::user()->name }}</a></li>
                     @endif
                 </ul>
             </div><!--/.nav-collapse -->
@@ -127,38 +125,38 @@
                 <!-- Start welcome area -->
                 <div class="welcome-area">
                     <div class="title-area">
-                        <h2 class="tittle">Welcome to <span>Nex</span></h2>
+                        <h2 class="tittle">Benvinguts a l'Intranet de l'Institut de l'Ebre <span>ebre-escool ng</span></h2>
                         <span class="tittle-line"></span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  labore et dolore magna aliqua. Ut enim ad minim veniamo laboris nis</p>
+                        <p>l'ebre-escool ng està pensat per gestionar, consulta el teu compte, passar llista, matrícular alumnes, ...</p>
                     </div>
                     <div class="welcome-content">
                         <ul class="wc-table">
                             <li>
                                 <div class="single-wc-content wow fadeInUp">
                                     <span class="fa fa-users wc-icon"></span>
-                                    <h4 class="wc-tittle">Creative concept</h4>
-                                    <p>At vero eos et accusamus et iusto odio in dignissimos ducimus voluptatum in delenatque </p>
+                                    <h4 class="wc-tittle">Gestió</h4>
+                                    <p>Gestió d'usuaris des de una sola Aplicació, passar faltes, inventari i moltes més utilitats més.</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="single-wc-content wow fadeInUp">
                                     <span class="fa fa-sellsy wc-icon"></span>
-                                    <h4 class="wc-tittle">interface design</h4>
-                                    <p>At vero eos et accusamus et iusto odio in dignissimos ducimus voluptatum in delenatque </p>
+                                    <h4 class="wc-tittle">Disseny Escalable</h4>
+                                    <p>S'adapta a tot tipus de dispositius, tablets, phablets, smartphones, Ordinadors de Sobretaula, Portàtils...</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="single-wc-content wow fadeInUp">
-                                    <span class="fa fa-line-chart wc-icon"></span>
-                                    <h4 class="wc-tittle">strategy</h4>
-                                    <p>At vero eos et accusamus et iusto odio in dignissimos ducimus voluptatum in delenatque </p>
+                                    <span class="fa fa-hand-peace-o wc-icon"></span>
+                                    <h4 class="wc-tittle">Disseny Amigable</h4>
+                                    <p>Casa cosa al seu lloc, a ebre-escool ng tot està on a de estar, fàçil i ràpida de entendre.</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="single-wc-content wow fadeInUp">
-                                    <span class="fa fa-bus wc-icon"></span>
-                                    <h4 class="wc-tittle">business solution</h4>
-                                    <p>At vero eos et accusamus et iusto odio in dignissimos ducimus voluptatum in delenatque </p>
+                                    <span class="fa fa-user-secret wc-icon"></span>
+                                    <h4 class="wc-tittle">Rols i Usuaris</h4>
+                                    <p>Es disposa de ROLs i usuaris, per tant cada usuari te el seu espai i els altres usauris no hi poden veurei. </p>
                                 </div>
                             </li>
                         </ul>
@@ -180,13 +178,12 @@
                         <div class="col-md-7 col-sm-6 col-xs-12">
                             <div class="about-right wow fadeInRight">
                                 <div class="title-area">
-                                    <h2 class="tittle">About <span>Nex</span> design</h2>
+                                    <h2 class="tittle">Donem-li <span>un cop</span> d'ull</h2>
                                     <span class="tittle-line"></span>
-                                    <p>ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illotore itatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-                                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores e</p>
+                                    <p>El disseny està escollit de la Plantilla AdminLTE, amb algunes modificacions visials, que li donen un caracter inovador.</p>
+                                    <p>Cal destacar que aquest disseny s'adaptar a totes les pantalles, cada usuari es diferent per això es dona importancia a bon disseny.</p>
                                     <div class="about-btn-area">
-                                        <a href="#" class="button button-default" data-text="KNOW MORE"><span>KNOW MORE</span></a>
+                                        <a href="#" class="button button-default" data-text="REGISTRAT"><span>ANEM-HI</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -201,12 +198,12 @@
 
 <!-- Start call to action -->
 <section id="call-to-action">
-    <img src="assets/images/call-to-action-bg.png" alt="img">
+    <img src="{{asset('img/call-to-action-bg.png')}}" alt="img">
     <div class="call-to-overlay">
         <div class="container">
             <div class="call-to-content wow fadeInUp">
-                <h2>The most impressive templete you will find</h2>
-                <a href="#" class="button button-default" data-text="GET IT NOW"><span>GET IT NOW</span></a>
+                <h2>Descarregat l'Aplicació desde el GitHub</h2>
+                <a href="https://github.com/INSEBRE/ebre-escool-ng" class="button button-default" data-text="GitHub"><span>GitHub</span></a>
             </div>
         </div>
     </div>
@@ -220,9 +217,9 @@
             <div class="col-md-12">
                 <div class="team-area">
                     <div class="title-area">
-                        <h2 class="tittle">Meet our team</h2>
+                        <h2 class="tittle">Qui som?</h2>
                         <span class="tittle-line"></span>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto</p>
+                        <p>Som tècnics de gra Superior d'Aplicacions Multiplataform</p>
                     </div>
                     <!-- Start team content -->
                     <div class="team-content">
@@ -243,7 +240,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="team-item team-img-2 wow fadeInUp">
+                                <div class="team-item team-img-3 wow fadeInUp">
                                     <div class="team-info">
                                         <p> I must explain to you how all this mistaken idea of denouncing pleasure n</p>
                                         <a href="#"><span class="fa fa-facebook"></span></a>
@@ -258,35 +255,35 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="team-item team-img-3 wow fadeInUp">
-                                    <div class="team-info">
-                                        <p> I must explain to you how all this mistaken idea of denouncing pleasure n</p>
-                                        <a href="#"><span class="fa fa-facebook"></span></a>
-                                        <a href="#"><span class="fa fa-twitter"></span></a>
-                                        <a href="#"><span class="fa fa-pinterest"></span></a>
-                                        <a href="#"><span class="fa fa-rss"></span></a>
-                                    </div>
-                                </div>
-                                <div class="team-address">
-                                    <p>JOHN VICK</p>
-                                    <span>Developer</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="team-item team-img-4 wow fadeInUp">
-                                    <div class="team-info">
-                                        <p> I must explain to you how all this mistaken idea of denouncing pleasure n</p>
-                                        <a href="#"><span class="fa fa-facebook"></span></a>
-                                        <a href="#"><span class="fa fa-twitter"></span></a>
-                                        <a href="#"><span class="fa fa-pinterest"></span></a>
-                                        <a href="#"><span class="fa fa-rss"></span></a>
-                                    </div>
-                                </div>
-                                <div class="team-address">
-                                    <p>ROB HANSOM</p>
-                                    <span>Senior designer</span>
-                                </div>
-                            </li>
+                                {{--<div class="team-item team-img-3 wow fadeInUp">--}}
+                                    {{--<div class="team-info">--}}
+                                        {{--<p> I must explain to you how all this mistaken idea of denouncing pleasure n</p>--}}
+                                        {{--<a href="#"><span class="fa fa-facebook"></span></a>--}}
+                                        {{--<a href="#"><span class="fa fa-twitter"></span></a>--}}
+                                        {{--<a href="#"><span class="fa fa-pinterest"></span></a>--}}
+                                        {{--<a href="#"><span class="fa fa-rss"></span></a>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                                {{--<div class="team-address">--}}
+                                    {{--<p>JOHN VICK</p>--}}
+                                    {{--<span>Developer</span>--}}
+                                {{--</div>--}}
+                            {{--</li>--}}
+                            {{--<li>--}}
+                                {{--<div class="team-item team-img-4 wow fadeInUp">--}}
+                                    {{--<div class="team-info">--}}
+                                        {{--<p> I must explain to you how all this mistaken idea of denouncing pleasure n</p>--}}
+                                        {{--<a href="#"><span class="fa fa-facebook"></span></a>--}}
+                                        {{--<a href="#"><span class="fa fa-twitter"></span></a>--}}
+                                        {{--<a href="#"><span class="fa fa-pinterest"></span></a>--}}
+                                        {{--<a href="#"><span class="fa fa-rss"></span></a>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                                {{--<div class="team-address">--}}
+                                    {{--<p>ROB HANSOM</p>--}}
+                                    {{--<span>Senior designer</span>--}}
+                                {{--</div>--}}
+                            {{--</li>--}}
                         </ul>
                     </div>
                     <!-- End team content -->
@@ -376,163 +373,9 @@
 </section>
 <!-- End service section -->
 
-<!-- Start Portfolio section -->
-<section id="portfolio">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="portfolio-area">
-                    <div class="title-area">
-                        <h2 class="tittle">Recent portfolio</h2>
-                        <span class="tittle-line"></span>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto</p>
-                    </div>
-                    <!-- Portfolio content -->
-                    <div class="portfolio-content">
-                        <!-- portfolio menu -->
-                        <div class="portfolio-menu">
-                            <ul>
-                                <li class="filter" data-filter="all">All</li>
-                                <li class="filter" data-filter=".branding">Branding</li>
-                                <li class="filter" data-filter=".design">Design</li>
-                                <li class="filter" data-filter=".development">Development</li>
-                                <li class="filter" data-filter=".photography">Photography</li>
-                            </ul>
-                        </div>
-                        <!-- Portfolio container -->
-                        <div id="mixit-container" class="portfolio-container">
-                            <div class="single-portfolio mix branding">
-                                <div class="single-item">
-                                    <img src="assets/images/portfolio-img-small1.jpg" alt="img">
-                                    <div class="single-item-content">
-                                        <div class="portfolio-social-icon">
-                                            <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big1.jpg"><i class="fa fa-eye"></i></a>
-                                            <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
-                                        </div>
-                                        <div class="portfolio-title">
-                                            <h4>Mobile application</h4>
-                                            <span>UI Design</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-portfolio mix design">
-                                <div class="single-item">
-                                    <img src="assets/images/portfolio-img-small2.jpg" alt="img">
-                                    <div class="single-item-content">
-                                        <div class="portfolio-social-icon">
-                                            <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big2.jpg"><i class="fa fa-eye"></i></a>
-                                            <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
-                                        </div>
-                                        <div class="portfolio-title">
-                                            <h4>Mobile application</h4>
-                                            <span>UI Design</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-portfolio mix development">
-                                <div class="single-item">
-                                    <img src="assets/images/portfolio-img-small3.jpg" alt="img">
-                                    <div class="single-item-content">
-                                        <div class="portfolio-social-icon">
-                                            <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big3.jpg"><i class="fa fa-eye"></i></a>
-                                            <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
-                                        </div>
-                                        <div class="portfolio-title">
-                                            <h4>Mobile application</h4>
-                                            <span>UI Design</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-portfolio mix photography">
-                                <div class="single-item">
-                                    <img src="assets/images/portfolio-img-small4.jpg" alt="img">
-                                    <div class="single-item-content">
-                                        <div class="portfolio-social-icon">
-                                            <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big4.jpg"><i class="fa fa-eye"></i></a>
-                                            <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
-                                        </div>
-                                        <div class="portfolio-title">
-                                            <h4>Mobile application</h4>
-                                            <span>UI Design</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-portfolio mix photography">
-                                <div class="single-item">
-                                    <img src="assets/images/portfolio-img-small5.jpg" alt="img">
-                                    <div class="single-item-content">
-                                        <div class="portfolio-social-icon">
-                                            <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big5.jpg"><i class="fa fa-eye"></i></a>
-                                            <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
-                                        </div>
-                                        <div class="portfolio-title">
-                                            <h4>Mobile application</h4>
-                                            <span>UI Design</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-portfolio mix photography">
-                                <div class="single-item">
-                                    <img src="assets/images/portfolio-img-small6.jpg" alt="img">
-                                    <div class="single-item-content">
-                                        <div class="portfolio-social-icon">
-                                            <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big6.jpg"><i class="fa fa-eye"></i></a>
-                                            <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
-                                        </div>
-                                        <div class="portfolio-title">
-                                            <h4>Mobile application</h4>
-                                            <span>UI Design</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-portfolio mix photography">
-                                <div class="single-item">
-                                    <img src="assets/images/portfolio-img-small7.jpg" alt="img">
-                                    <div class="single-item-content">
-                                        <div class="portfolio-social-icon">
-                                            <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big7.jpg"><i class="fa fa-eye"></i></a>
-                                            <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
-                                        </div>
-                                        <div class="portfolio-title">
-                                            <h4>Mobile application</h4>
-                                            <span>UI Design</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-portfolio mix photography">
-                                <div class="single-item">
-                                    <img src="assets/images/portfolio-img-small2.jpg" alt="img">
-                                    <div class="single-item-content">
-                                        <div class="portfolio-social-icon">
-                                            <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big2.jpg"><i class="fa fa-eye"></i></a>
-                                            <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
-                                        </div>
-                                        <div class="portfolio-title">
-                                            <h4>Mobile application</h4>
-                                            <span>UI Design</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Portfolio section -->
-
 <!-- Start counter section -->
 <section id="counter">
-    <img src="assets/images/counter-bg.jpg" alt="img">
+    <img src="{{asset('/img/counter-bg.jpg')}}" alt="img">
     <div class="counter-overlay">
         <div class="container">
             <div class="row">
@@ -543,17 +386,26 @@
                             <div class="single-counter">
                                 <span class="fa fa-users"></span>
                                 <div class="counter-count">
-                                    <span class="counter">1050</span>
-                                    <p>Happy Clients</p>
+                                    <span class="counter">1200</span>
+                                    <p>Usuaris</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6 col-xs-6">
                             <div class="single-counter">
-                                <span class="fa fa-bus"></span>
+                                <span class="fa fa-eye"></span>
                                 <div class="counter-count">
-                                    <span class="counter">750</span>
-                                    <p>Project delivery</p>
+                                    <span class="counter">300</span>
+                                    <p>Visites diaries</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-6">
+                            <div class="single-counter">
+                                <span class="fa fa-facebook"></span>
+                                <div class="counter-count">
+                                    <span class="counter">30</span>
+                                    <p>Els Agrada</p>
                                 </div>
                             </div>
                         </div>
@@ -561,17 +413,8 @@
                             <div class="single-counter">
                                 <span class="fa fa-twitter"></span>
                                 <div class="counter-count">
-                                    <span class="counter">2,300</span>
+                                    <span class="counter">20</span>
                                     <p>Followers</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6">
-                            <div class="single-counter">
-                                <span class="fa fa-tasks"></span>
-                                <div class="counter-count">
-                                    <span class="counter">800</span>
-                                    <p>Project done</p>
                                 </div>
                             </div>
                         </div>
@@ -583,261 +426,48 @@
 </section>
 <!-- End counter section -->
 
-<!-- Start Pricing Table section -->
-<section id="pricing-table">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="pricing-table-area">
-                    <div class="title-area">
-                        <h2 class="tittle">Pricing table</h2>
-                        <span class="tittle-line"></span>
-                        <p>unde omnis iste natus error sit voluptatem accusantium doloremque laudantium  aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto</p>
-                    </div>
-                    <!-- service content -->
-                    <div class="pricing-table-content">
-                        <ul class="price-table">
-                            <li class="wow slideInUp">
-                                <div class="single-price">
-                                    <h4 class="price-header">Basic</h4>
-                                    <span class="price-amount">$0.00/mo</span>
-                                    <p>5GB Storage</p>
-                                    <p>1GB RAM</p>
-                                    <p>400GB Bandwidth</p>
-                                    <p>10 Email Address</p>
-                                    <p>Unlimited access</p>
-                                    <p>Forum Support</p>
-                                    <a data-text="SIGN UP" class="button button-default" href="#"><span>SIGN UP</span></a>
-                                </div>
-                            </li>
-                            <li class="wow slideInUp">
-                                <div class="single-price standard-price">
-                                    <h4 class="price-header">Standard</h4>
-                                    <span class="price-amount">$10.00/mo</span>
-                                    <p>5GB Storage</p>
-                                    <p>1GB RAM</p>
-                                    <p>400GB Bandwidth</p>
-                                    <p>10 Email Address</p>
-                                    <p>Unlimited access</p>
-                                    <p>Forum Support</p>
-                                    <a data-text="SIGN UP" class="button button-default" href="#"><span>SIGN UP</span></a>
-                                </div>
-                            </li>
-                            <li class="wow slideInUp">
-                                <div class="single-price">
-                                    <h4 class="price-header">Advance</h4>
-                                    <span class="price-amount">$19.00/mo</span>
-                                    <p>5GB Storage</p>
-                                    <p>1GB RAM</p>
-                                    <p>400GB Bandwidth</p>
-                                    <p>10 Email Address</p>
-                                    <p>Unlimited access</p>
-                                    <p>Forum Support</p>
-                                    <a data-text="SIGN UP" class="button button-default" href="#"><span>SIGN UP</span></a>
-                                </div>
-                            </li>
-                            <li class="wow slideInUp">
-                                <div class="single-price">
-                                    <h4 class="price-header">Mighty</h4>
-                                    <span class="price-amount">$39.00/mo</span>
-                                    <p>5GB Storage</p>
-                                    <p>1GB RAM</p>
-                                    <p>400GB Bandwidth</p>
-                                    <p>10 Email Address</p>
-                                    <p>Unlimited access</p>
-                                    <p>Forum Support</p>
-                                    <a data-text="SIGN UP" class="button button-default" href="#"><span>SIGN UP</span></a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Pricing Table section -->
-
-<!-- Start Testimonial section -->
-<section id="testimonial">
-    <img src="assets/images/testimonial-bg.jpg" alt="img">
-    <div class="counter-overlay">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- Start Testimonial area -->
-                    <div class="testimonial-area">
-                        <div class="title-area">
-                            <h2 class="tittle">What people say about us</h2>
-                            <span class="tittle-line"></span>
-                        </div>
-                        <div class="testimonial-conten">
-                            <!-- Start testimonial slider -->
-                            <div class="testimonial-slider">
-                                <!-- single slide -->
-                                <div class="single-slide">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcoquat. Duis aute irure d olor in reprehenderit</p>
-                                    <div class="single-testimonial">
-                                        <img class="testimonial-thumb" src="assets/images/testimonial-image1.png" alt="img">
-                                        <p>Jonna Hike</p>
-                                        <span>CEO, Themeforest</span>
-                                    </div>
-                                </div>
-                                <!-- single slide -->
-                                <div class="single-slide">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcoquat. Duis aute irure d olor in reprehenderit</p>
-                                    <div class="single-testimonial">
-                                        <img class="testimonial-thumb" src="assets/images/team-member2.png" alt="img">
-                                        <p>Jonna Hike</p>
-                                        <span>CEO, Themeforest</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Testimonial section -->
-
-<!-- Start from blog section -->
-<section id="from-blog">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="from-blog-area">
-                    <div class="title-area">
-                        <h2 class="tittle">Our blog</h2>
-                        <span class="tittle-line"></span>
-                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est</p>
-                    </div>
-                    <!-- From Blog content -->
-                    <div class="from-blog-content">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <article class="single-from-blog">
-                                    <figure>
-                                        <a href="blog-single.html"><img src="assets/images/the-sky.jpg" alt="img"></a>
-                                    </figure>
-                                    <div class="blog-title">
-                                        <h2><a href="blog-single.html">Here is the post title</a></h2>
-                                        <p>Posted by <a class="blog-admin" href="#">admin</a> on <span class="blog-date">23rd july 2015</span></p>
-                                    </div>
-                                    <p>Sed ut perspiciatis unde mnis is te natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis </p>
-                                    <div class="blog-footer">
-                                        <a href="#"><span class="fa fa-comment"></span>18 Comments</a>
-                                        <a href="#"><span class="fa fa-thumbs-o-up"></span>35 Likes</a>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="col-md-4">
-                                <article class="single-from-blog">
-                                    <figure>
-                                        <a href="blog-single.html"><img src="assets/images/photographer.jpg" alt="img"></a>
-                                    </figure>
-                                    <div class="blog-title">
-                                        <h2><a href="blog-single.html">Here is the post title</a></h2>
-                                        <p>Posted by <a class="blog-admin" href="#">admin</a> on <span class="blog-date">23rd july 2015</span></p>
-                                    </div>
-                                    <p>Sed ut perspiciatis unde mnis is te natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis </p>
-                                    <div class="blog-footer">
-                                        <a href="#"><span class="fa fa-comment"></span>18 Comments</a>
-                                        <a href="#"><span class="fa fa-thumbs-o-up"></span>35 Likes</a>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="col-md-4">
-                                <article class="single-from-blog">
-                                    <figure>
-                                        <a href="blog-single.html"><img src="assets/images/sealand.jpg" alt="img"></a>
-                                    </figure>
-                                    <div class="blog-title">
-                                        <h2><a href="blog-single.html">Here is the post title</a></h2>
-                                        <p>Posted by <a class="blog-admin" href="#">admin</a> on <span class="blog-date">23rd july 2015</span></p>
-                                    </div>
-                                    <p>Sed ut perspiciatis unde mnis is te natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis </p>
-                                    <div class="blog-footer">
-                                        <a href="#"><span class="fa fa-comment"></span>18 Comments</a>
-                                        <a href="#"><span class="fa fa-thumbs-o-up"></span>35 Likes</a>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End from blog section -->
-
-{{--<section id="client">--}}
-    {{--<div class="container">--}}
-        {{--<div class="row">--}}
-            {{--<div class="col-md-12">--}}
-                {{--<div class="client-area">--}}
-                    {{--<ul class="client-table">--}}
-                        {{--<li><img src="assets/images/envato.png" alt="client logo"></li>--}}
-                        {{--<li><img src="assets/images/google.png" alt="client logo"></li>--}}
-                        {{--<li><img src="assets/images/amazon.png" alt="client logo"></li>--}}
-                        {{--<li><img src="assets/images/discovery.png" alt="client logo"></li>--}}
-                        {{--<li><img src="assets/images/envato.png" alt="client logo"></li>--}}
-                        {{--<li><img src="assets/images/tuenti.png" alt="client logo"></li>--}}
-                        {{--<li><img src="assets/images/envato.png" alt="client logo"></li>--}}
-                        {{--<li><img src="assets/images/google.png" alt="client logo"></li>--}}
-                        {{--<li><img src="assets/images/amazon.png" alt="client logo"></li>--}}
-                        {{--<li><img src="assets/images/discovery.png" alt="client logo"></li>--}}
-                        {{--<li><img src="assets/images/envato.png" alt="client logo"></li>--}}
-                        {{--<li><img src="assets/images/tuenti.png" alt="client logo"></li>--}}
-                    {{--</ul>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-    {{--</div>--}}
-{{--</section>--}}
 <!-- Start Contact section -->
 <section id="contact">
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="contact-left wow fadeInLeft">
-                    <h2>Contact with us</h2>
+                    <h2>Contacta</h2>
                     <address class="single-address">
-                        <h4>Postal address:</h4>
-                        <p>PO Box 16122 Collins Street West Victoria 8007 Australia</p>
+                        <h4>Adreça:</h4>
+                        <p>Institut de l'Ebre Avd. Colom 34-42</p>
                     </address>
                     <address class="single-address">
-                        <h4>Headquarters:</h4>
-                        <p>121 King Street, Melbourne Victoria 3000 Australia</p>
+                        <h4>Municipi:</h4>
+                        <p>Tortosa</p>
+                        <p>Codi Postal: 43500</p>
                     </address>
                     <address class="single-address">
-                        <h4>Phone</h4>
-                        <p>Phone Number: (123) 456 7890</p>
-                        <p>Fax Number: (123) 456 7890</p>
+                        <h4>Telèfon - Fax</h4>
+                        <p>Tel: 977500949</p>
+                        <p>Fax: 977503064</p>
                     </address>
                     <address class="single-address">
-                        <h4>E-Mail</h4>
-                        <p>Support: Support@example.com</p>
-                        <p>Sales: sales@example.com</p>
+                        <h4>Correu electronic</h4>
+                        <p>iesebre@iesebre.com</p>
+                        <p>e43004441@xtec.com</p>
                     </address>
                 </div>
             </div>
             <div class="col-md-8 col-sm-6 col-xs-12">
                 <div class="contact-right wow fadeInRight">
-                    <h2>Send a message</h2>
+                    <h2>Envia un missatge</h2>
                     <form action="" class="contact-form">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Name">
+                            <input type="text" class="form-control" placeholder="Nom">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Enter Email">
+                            <input type="email" class="form-control" placeholder="Correu electronic">
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control"></textarea>
+                            <textarea class="form-control" placeholder="Cos del Misstage"></textarea>
                         </div>
-                        <button type="submit" data-text="SUBMIT" class="button button-default"><span>SUBMIT</span></button>
+                        <button type="submit" data-text="Envia" class="button button-default"><span>Envia</span></button>
                     </form>
                 </div>
             </div>
@@ -858,7 +488,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="footer-top-area">
-                        <a class="footer-logo" href="#"><img src="{{asset('/css/logo.png')}}" alt="Logo"></a>
+                        <a class="footer-logo" href="#"><img src="{{asset('/img/logo.png')}}" alt="Logo"></a>
                         <div class="footer-social">
                             <a class="facebook" href="#"><span class="fa fa-facebook"></span></a>
                             <a class="twitter" href="#"><span class="fa fa-twitter"></span></a>

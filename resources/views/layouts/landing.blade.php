@@ -15,7 +15,7 @@
     <!-- Slick slider -->
     <link rel="stylesheet" type="text/css" href="{{asset('/css/slick.css')}}"/>
     <!-- Fancybox slider -->
-    <link rel="stylesheet" href="{{asset('/css/jquery.fancybox.css')}}" type="text/css" media="screen" />
+    <link rel="stylesheet" href="{{asset('/css/jquery.fancybox.css')}}" type="text/css" media="screen"/>
     <!-- Animate css -->
     <link rel="stylesheet" type="text/css" href="{{asset('/css/animate.css')}}"/>
     <!-- Theme color -->
@@ -80,7 +80,8 @@
         <div class="container">
             <div class="navbar-header">
                 <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -124,9 +125,11 @@
                 <!-- Start welcome area -->
                 <div class="welcome-area">
                     <div class="title-area">
-                        <h2 class="tittle">Benvinguts a l'Intranet de l'Institut de l'Ebre <span>ebre-escool ng</span></h2>
+                        <h2 class="tittle">Benvinguts a l'Intranet de l'Institut de l'Ebre <span>ebre-escool ng</span>
+                        </h2>
                         <span class="tittle-line"></span>
-                        <p>l'ebre-escool ng està pensat per gestionar, consulta el teu compte, passar llista, matrícular alumnes, ...</p>
+                        <p>l'ebre-escool ng està pensat per gestionar, consulta el teu compte, passar llista, matrícular
+                            alumnes, ...</p>
                     </div>
                     <div class="welcome-content">
                         <ul class="wc-table">
@@ -134,28 +137,32 @@
                                 <div class="single-wc-content wow fadeInUp">
                                     <span class="fa fa-users wc-icon"></span>
                                     <h4 class="wc-tittle">Gestió</h4>
-                                    <p>Gestió d'usuaris des de una sola Aplicació, passar faltes, inventari i moltes més utilitats més.</p>
+                                    <p>Gestió d'usuaris des de una sola Aplicació, passar faltes, inventari i moltes més
+                                        utilitats més.</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="single-wc-content wow fadeInUp">
                                     <span class="fa fa-sellsy wc-icon"></span>
                                     <h4 class="wc-tittle">Disseny Escalable</h4>
-                                    <p>S'adapta a tot tipus de dispositius, tablets, phablets, smartphones, Ordinadors de Sobretaula, Portàtils...</p>
+                                    <p>S'adapta a tot tipus de dispositius, tablets, phablets, smartphones, Ordinadors
+                                        de Sobretaula, Portàtils...</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="single-wc-content wow fadeInUp">
                                     <span class="fa fa-hand-peace-o wc-icon"></span>
                                     <h4 class="wc-tittle">Disseny Amigable</h4>
-                                    <p>Casa cosa al seu lloc, a ebre-escool ng tot està on a de estar, fàçil i ràpida de entendre.</p>
+                                    <p>Casa cosa al seu lloc, a ebre-escool ng tot està on a de estar, fàçil i ràpida de
+                                        entendre.</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="single-wc-content wow fadeInUp">
                                     <span class="fa fa-user-secret wc-icon"></span>
                                     <h4 class="wc-tittle">Rols i Usuaris</h4>
-                                    <p>Es disposa de ROLs i usuaris, per tant cada usuari te el seu espai i els altres usauris no hi poden veurei. </p>
+                                    <p>Es disposa de ROLs i usuaris, per tant cada usuari te el seu espai i els altres
+                                        usauris no hi poden veurei. </p>
                                 </div>
                             </li>
                         </ul>
@@ -179,10 +186,13 @@
                                 <div class="title-area">
                                     <h2 class="tittle">Donem-li <span>un cop</span> d'ull</h2>
                                     <span class="tittle-line"></span>
-                                    <p>El disseny està escollit de la Plantilla AdminLTE, amb algunes modificacions visials, que li donen un caracter inovador.</p>
-                                    <p>Cal destacar que aquest disseny s'adaptar a totes les pantalles, cada usuari es diferent per això es dona importancia a bon disseny.</p>
+                                    <p>El disseny està escollit de la Plantilla AdminLTE, amb algunes modificacions
+                                        visials, que li donen un caracter inovador.</p>
+                                    <p>Cal destacar que aquest disseny s'adaptar a totes les pantalles, cada usuari es
+                                        diferent per això es dona importancia a bon disseny.</p>
                                     <div class="about-btn-area">
-                                        <a href="#" class="button button-default" data-text="REGISTRAT"><span>ANEM-HI</span></a>
+                                        <a href="#" class="button button-default"
+                                           data-text="REGISTRAT"><span>ANEM-HI</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -202,7 +212,8 @@
         <div class="container">
             <div class="call-to-content wow fadeInUp">
                 <h2>Descarregat l'Aplicació desde el GitHub</h2>
-                <a href="https://github.com/INSEBRE/ebre-escool-ng" class="button button-default" data-text="GitHub"><span>GitHub</span></a>
+                <a href="https://github.com/INSEBRE/ebre-escool-ng" class="button button-default"
+                   data-text="GitHub"><span>GitHub</span></a>
             </div>
         </div>
     </div>
@@ -226,7 +237,8 @@
                             <li>
                                 <div class="team-item team-img-1 wow fadeInUp">
                                     <div class="team-info">
-                                        <p> I must explain to you how all this mistaken idea of denouncing pleasure n</p>
+                                        <p> I must explain to you how all this mistaken idea of denouncing pleasure
+                                            n</p>
                                         <a href="#"><span class="fa fa-facebook"></span></a>
                                         <a href="#"><span class="fa fa-twitter"></span></a>
                                         <a href="#"><span class="fa fa-pinterest"></span></a>
@@ -241,7 +253,8 @@
                             <li>
                                 <div class="team-item team-img-3 wow fadeInUp">
                                     <div class="team-info">
-                                        <p> I must explain to you how all this mistaken idea of denouncing pleasure n</p>
+                                        <p> I must explain to you how all this mistaken idea of denouncing pleasure
+                                            n</p>
                                         <a href="#"><span class="fa fa-facebook"></span></a>
                                         <a href="#"><span class="fa fa-twitter"></span></a>
                                         <a href="#"><span class="fa fa-pinterest"></span></a>
@@ -253,11 +266,12 @@
                                     <span>Co-founder</span>
                                 </div>
                             </li>
-                    <!-- End team content -->
+                        </ul>
+                        <!-- End team content -->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 </section>
 <!-- Start Team action -->
 
@@ -270,7 +284,8 @@
                     <div class="title-area">
                         <h2 class="tittle">Service we offer</h2>
                         <span class="tittle-line"></span>
-                        <p>perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                        <p>perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+                            totam rem aperiam, eaque ipsa quae ab illo inventore</p>
                     </div>
                     <!-- service content -->
                     <div class="service-content">
@@ -434,7 +449,8 @@
                         <div class="form-group">
                             <textarea class="form-control" placeholder="Cos del Misstage"></textarea>
                         </div>
-                        <button type="submit" data-text="Envia" class="button button-default"><span>Envia</span></button>
+                        <button type="submit" data-text="Envia" class="button button-default"><span>Envia</span>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -465,7 +481,8 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <p>Designed by <a href="http://paolodavila.com">Paolo Dàvila</a> & <a href="https://ebrematic.com">Roger Melich</a></p>
+        <p>Designed by <a href="http://paolodavila.com">Paolo Dàvila</a> & <a href="https://ebrematic.com">Roger
+                Melich</a></p>
     </div>
 </footer>
 <!-- End Footer -->

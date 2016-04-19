@@ -60,6 +60,7 @@
                 <!-- Start header content slider -->
                 <h2 class="header-slide">ebre-escool ng
                     <span>Intranet</span>
+                    <span>Aplicació</span>
                     de l'Institut de l'Ebre</h2>
                 <!-- End header content slider -->
                 <!-- Header btn area -->

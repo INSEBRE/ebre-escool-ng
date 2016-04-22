@@ -1,6 +1,6 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
+    "name": "INSEBRE/ebre-escool-ng",
+    "description": "ebre-escool ng.",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",

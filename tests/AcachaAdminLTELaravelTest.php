@@ -8,7 +8,8 @@ use Illuminate\Support\Facades\Hash;
 /**
  * Class AcachaAdminLTELaravelTest
  */
-class AcachaAdminLTELaravelTest extends TestCase {
+class AcachaAdminLTELaravelTest extends TestCase
+{
 
     use DatabaseMigrations;
 
@@ -17,7 +18,8 @@ class AcachaAdminLTELaravelTest extends TestCase {
      *
      * @return void
      */
-    public function testLandingPage() {
+    public function testLandingPage()
+    {
         $this->visit('/')
             ->see('Institut de l\'Ebre');
     }
@@ -42,7 +44,8 @@ class AcachaAdminLTELaravelTest extends TestCase {
      *
      * @return void
      */
-    public function testLoginPage() {
+    public function testLoginPage()
+    {
         $this->visit('/login')
             ->see('Sign in to start your session');
     }
@@ -52,7 +55,8 @@ class AcachaAdminLTELaravelTest extends TestCase {
      *
      * @return void
      */
-    public function testLogin() {
+    public function testLogin()
+    {
         $user = factory(App\User::class)->create(['password' => Hash::make('passw0RD')]);
 
         $this->visit('/login')
@@ -68,7 +72,8 @@ class AcachaAdminLTELaravelTest extends TestCase {
      *
      * @return void
      */
-    public function testLoginRequiredFields() {
+    public function testLoginRequiredFields()
+    {
         $this->visit('/login')
             ->press('Sign In')
             ->see('The email field is required')
@@ -80,7 +85,8 @@ class AcachaAdminLTELaravelTest extends TestCase {
      *
      * @return void
      */
-    public function testRegisterPage() {
+    public function testRegisterPage()
+    {
         $this->visit('/register')
             ->see('Register a new membership');
     }
@@ -90,7 +96,8 @@ class AcachaAdminLTELaravelTest extends TestCase {
      *
      * @return void
      */
-    public function testPasswordResetPage() {
+    public function testPasswordResetPage()
+    {
         $this->visit('/password/reset')
             ->see('Reset Password');
     }
@@ -100,7 +107,8 @@ class AcachaAdminLTELaravelTest extends TestCase {
      *
      * @return void
      */
-    public function testHomePageForUnauthenticatedUsers() {
+    public function testHomePageForUnauthenticatedUsers()
+    {
         $this->visit('/home')
             ->seePageIs('/login');
     }
@@ -110,7 +118,8 @@ class AcachaAdminLTELaravelTest extends TestCase {
      *
      * @return void
      */
-    public function testHomePageForAuthenticatedUsers() {
+    public function testHomePageForAuthenticatedUsers()
+    {
         $user = factory(App\User::class)->create();
 
         $this->actingAs($user)
@@ -123,7 +132,8 @@ class AcachaAdminLTELaravelTest extends TestCase {
      *
      * @return void
      */
-    public function testLogout() {
+    public function testLogout()
+    {
         $user = factory(App\User::class)->create();
 
         $this->actingAs($user)
@@ -136,7 +146,8 @@ class AcachaAdminLTELaravelTest extends TestCase {
      *
      * @return void
      */
-    public function test404Page() {
+    public function test404Page()
+    {
         $this->get('asdasdjlapmnnk')
             ->seeStatusCode(404)
             ->see('404');
@@ -147,7 +158,8 @@ class AcachaAdminLTELaravelTest extends TestCase {
      *
      * @return void
      */
-    public function testNewUserRegistration() {
+    public function testNewUserRegistration()
+    {
         $this->visit('/register')
             ->type('Sergi Tur Badenas', 'name')
             ->type('sergiturbadenas@gmail.com', 'email')
@@ -166,7 +178,8 @@ class AcachaAdminLTELaravelTest extends TestCase {
      *
      * @return void
      */
-    public function testRequiredFieldsOnRegistrationPage() {
+    public function testRequiredFieldsOnRegistrationPage()
+    {
         $this->visit('/register')
             ->press('Register')
             ->see('The name field is required')
@@ -179,7 +192,8 @@ class AcachaAdminLTELaravelTest extends TestCase {
      *
      * @return void
      */
-    public function testSendPasswordReset() {
+    public function testSendPasswordReset()
+    {
         $user = factory(App\User::class)->create();
 
         $this->visit('password/reset')
@@ -193,7 +207,8 @@ class AcachaAdminLTELaravelTest extends TestCase {
      *
      * @return void
      */
-    public function testSendPasswordResetUserNotExists() {
+    public function testSendPasswordResetUserNotExists()
+    {
         $this->visit('password/reset')
             ->type('notexistingemail@gmail.com', 'email')
             ->press('Send Password Reset Link')

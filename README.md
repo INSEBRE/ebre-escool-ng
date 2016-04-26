@@ -1,4 +1,7 @@
-# ebre-escool ng [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/INSEBRE/ebre-escool-ng/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/INSEBRE/ebre-escool-ng/?branch=master) [![Build Status](https://travis-ci.org/INSEBRE/ebre-escool-ng.svg?branch=master)](https://travis-ci.org/INSEBRE/ebre-escool-ng)
+# ebre-escool ng
+
+[![StyleCI](https://styleci.io/repos/56324538/shield?style=flat)](https://styleci.io/repos/56324538) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/INSEBRE/ebre-escool-ng/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/INSEBRE/ebre-escool-ng/?branch=master) [![Build Status](https://travis-ci.org/INSEBRE/ebre-escool-ng.svg?branch=master)](https://travis-ci.org/INSEBRE/ebre-escool-ng)
+
 Crèdit de Síntesi (Paolo Dàvila Bazalar - Roger Melich Curto).
 
 ebre-escool ng és una aplicació de gestió de centres d'ensenyament. Centre Pilot [Institut de l'Ebre](http://www.iesebre.com).

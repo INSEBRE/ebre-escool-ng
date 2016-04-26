@@ -1,5 +1,7 @@
 preset: psr2
 
 finder:
+  not-name:
+    - "HomeController.php"
   not-path:
     - "public"

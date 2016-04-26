@@ -170,7 +170,6 @@ class AcachaAdminLTELaravelTest extends TestCase
             ->seePageIs('/home')
             ->seeInDatabase('users', ['email' => 'sergiturbadenas@gmail.com',
                                       'name'  => 'Sergi Tur Badenas']);
-
     }
 
     /**

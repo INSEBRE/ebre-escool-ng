@@ -1,6 +1,6 @@
 # ebre-escool ng
 
-[![StyleCI](https://styleci.io/repos/56324538/shield?style=flat)](https://styleci.io/repos/56324538) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/INSEBRE/ebre-escool-ng/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/INSEBRE/ebre-escool-ng/?branch=master) [![Build Status](https://travis-ci.org/INSEBRE/ebre-escool-ng.svg?branch=master)](https://travis-ci.org/INSEBRE/ebre-escool-ng)
+[![StyleCI](https://styleci.io/repos/56324538/shield?style=flat)](https://styleci.io/repos/56324538) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/INSEBRE/ebre-escool-ng/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/INSEBRE/ebre-escool-ng/?branch=master) [![Build Status](https://travis-ci.org/INSEBRE/ebre-escool-ng.svg?branch=master)](https://travis-ci.org/INSEBRE/ebre-escool-ng) [![Coverage Status](https://coveralls.io/repos/github/INSEBRE/ebre-escool-ng/badge.svg?branch=master)](https://coveralls.io/github/INSEBRE/ebre-escool-ng?branch=master)
 
 Crèdit de Síntesi (Paolo Dàvila Bazalar - Roger Melich Curto).
 

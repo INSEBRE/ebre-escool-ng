@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6918dd23c5264b933a17fbf16d591fa0",
-    "content-hash": "0a3ac85b45db06a578974c155bd48459",
+    "hash": "4726199f789a76032e03884b0b593bae",
+    "content-hash": "6643995d76b14d14ab7505d28659d843",
     "packages": [
         {
             "name": "acacha/admin-lte-template-laravel",
@@ -58,6 +58,53 @@
                 "theme"
             ],
             "time": "2016-03-16 11:10:31"
+        },
+        {
+            "name": "acacha/laravel-bootstrap",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/acacha/laravel-bootstrap.git",
+                "reference": "c10c684fd3083c011b04dc8e0a56c3bfda9bc96b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/acacha/laravel-bootstrap/zipball/c10c684fd3083c011b04dc8e0a56c3bfda9bc96b",
+                "reference": "c10c684fd3083c011b04dc8e0a56c3bfda9bc96b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0",
+                "symfony/finder": "~3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "Acacha\\LaravelBootstrap\\": "src/app"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sergi Tur Badenas",
+                    "email": "sergiturbadenas@gmail.com",
+                    "homepage": "http://acacha.org"
+                }
+            ],
+            "description": "A Laravel Bootstrap Service Provider",
+            "keywords": [
+                "acacha",
+                "bootstrap",
+                "laravel"
+            ],
+            "time": "2015-12-17 15:53:35"
         },
         {
             "name": "barryvdh/laravel-debugbar",

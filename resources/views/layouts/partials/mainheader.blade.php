@@ -126,7 +126,7 @@
                         <ul class="dropdown-menu">
                             <!-- The user image in the menu -->
                             <li class="user-header">
-                                <img src="{{Gravatar::get(Auth::loginUsingId(1)->email)}}" class="user-image" alt="User Image"/>
+                                <img src="{{Gravatar::get(Auth::loginUsingId(1)->email)}}" class="img-circle" alt="User Image"/>
                                 {{--<img src="/img/user2-160x160.jpg" class="img-circle" alt="User Image" />--}}
                                 <p>
                                     {{ Auth::user()->name }}

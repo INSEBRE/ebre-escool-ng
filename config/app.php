@@ -169,6 +169,9 @@ return [
         Acacha\AdminLTETemplateLaravel\Providers\AdminLTETemplateServiceProvider::class,
         #llum_providers
 
+        //Gravatar
+        Creativeorange\Gravatar\GravatarServiceProvider::class,
+
     ],
 
     /*
@@ -224,6 +227,9 @@ return [
          */
         'AdminLTE' => Acacha\AdminLTETemplateLaravel\Facades\AdminLTE::class,
         #llum_aliases
+
+        //Gravatar
+        'Gravatar' => Creativeorange\Gravatar\Facades\Gravatar::class,
 
     ],
 

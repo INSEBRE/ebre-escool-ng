@@ -173,7 +173,7 @@ return [
         Creativeorange\Gravatar\GravatarServiceProvider::class,
 
         //Larave Bootstrap
-        Acacha\LaravelBootstrap\Providers\BootstrapServiceProvider::class
+        Acacha\LaravelBootstrap\Providers\BootstrapServiceProvider::class,
 
     ],
 

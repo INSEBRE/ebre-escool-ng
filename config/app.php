@@ -172,9 +172,9 @@ return [
         //Gravatar
         Creativeorange\Gravatar\GravatarServiceProvider::class,
 
-        //Larave Bootstrap
+        //Laravel Bootstrap
         Acacha\LaravelBootstrap\Providers\BootstrapServiceProvider::class,
-
+        
     ],
 
     /*

@@ -174,6 +174,9 @@ return [
 
         //Laravel Bootstrap
         Acacha\LaravelBootstrap\Providers\BootstrapServiceProvider::class,
+
+        //Spatie Laravel Menu
+        Spatie\Menu\Laravel\MenuServiceProvider::class,
         
     ],
 
@@ -233,6 +236,9 @@ return [
 
         //Gravatar
         'Gravatar' => Creativeorange\Gravatar\Facades\Gravatar::class,
+
+        //Spatie Laravel Menu
+        'Menu' => Spatie\Menu\Laravel\MenuFacade::class,
 
     ],
 

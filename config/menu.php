@@ -19,7 +19,7 @@ Menu::macro('adminlteSeparator', function ($title) {
 });
 
 Menu::macro('main', function () {
-    return Menu::adminlteMenu()
+    return Menu::adminlteMenu()//->addIfCan($authorization, Item $item)
         ->add(Link::to('/roll_class', 'Passar llista'))->addClass('fa-bell-o')
         ->add(
             Menu::adminlteSubmenu('Tutoria')

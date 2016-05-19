@@ -134,5 +134,3 @@ Menu::macro('main', function () {
         )
         ->setActiveFromRequest();
 });
-
-

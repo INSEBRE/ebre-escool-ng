@@ -3,5 +3,8 @@ preset: psr2
 finder:
   not-name:
     - "HomeController.php"
+    - "bootstrap.php"
+    - "gravatar.php"
+    - "menu.php"
   not-path:
     - "public"

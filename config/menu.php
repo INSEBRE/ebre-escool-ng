@@ -133,4 +133,5 @@ Menu::macro('main', function () {
                 ->add(Link::to('/massive_change_password', 'Canvi Massiu de Paraules de Pas'))
         )
         ->setActiveFromRequest();
+
 });

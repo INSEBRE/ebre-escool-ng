@@ -1,6 +1,6 @@
 <?php
 
-return [
+return array(
 
     /*
     |--------------------------------------------------------------------------
@@ -27,4 +27,4 @@ return [
 
     'file' => env('BOOTSTRAP_MAIN_FILE', 'bootstrap.php')
 
-];
+);

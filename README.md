@@ -42,9 +42,9 @@ ebre-escool ng és una aplicació de gestió de centres d'ensenyament. Centre Pi
 * Instal·lació de paquets de tercers:
 
            $ composer install
-     Actualitzar Paquets:
+     Genear Key Laravel per tal que funcioni l'aplicació:
 
-            $ composer update
+            $ php artisan key:generate
 
 * Modificar .env per canviar configuració de la base de dades.
 

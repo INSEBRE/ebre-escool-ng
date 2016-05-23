@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+# Profile
+Route::get('/profile', [
+    'as' => 'profile', 'uses' => 'Auth\ProfileController@show'
+]);

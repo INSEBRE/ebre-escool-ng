@@ -28,7 +28,11 @@
             <form action="{{ url('/register') }}" method="post">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <div class="form-group has-feedback">
-                    <input type="text" class="form-control" placeholder="Full name" name="name" value="{{ old('name') }}"/>
+                    <input type="text" class="form-control" placeholder="Name" name="name" value="{{ old('name') }}"/>
+                    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <input type="text" class="form-control" placeholder="Last Name" name="lastname" value="{{ old('lastname') }}"/>
                     <span class="glyphicon glyphicon-user form-control-feedback"></span>
                 </div>
                 <div class="form-group has-feedback">

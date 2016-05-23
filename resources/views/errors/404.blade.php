@@ -1,19 +1,15 @@
-@extends('layouts.app')
+@extends('layouts.auth')
 
 @section('htmlheader_title')
-    Page not found
+    Log in
 @endsection
 
 @section('contentheader_title')
-    404 Error Page
+    404 Page Not Founds
 @endsection
 
-@section('$contentheader_description')
-@endsection
-
-@section('main-content')
-
-<div class="error-page">
+@section('content')
+<div class="error-page ">
     <h2 class="headline text-yellow"> 404</h2>
     <div class="error-content">
         <h3><i class="fa fa-warning text-yellow"></i> Oops! Page not found.</h3>

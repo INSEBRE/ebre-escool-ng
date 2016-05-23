@@ -12,7 +12,7 @@
         "acacha/admin-lte-template-laravel": "^2.0",
         "satooshi/php-coveralls": "^1.0",
         "creativeorange/gravatar": "^1.0",
-        "acacha/laravel-bootstrap": "^0.1",
+        "acacha/laravel-bootstrap": "dev-master",
         "spatie/laravel-menu": "^1.2"
     },
     "require-dev": {

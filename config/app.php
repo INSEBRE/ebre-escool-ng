@@ -177,6 +177,9 @@ return [
 
         //Spatie Laravel Menu
         Spatie\Menu\Laravel\MenuServiceProvider::class,
+
+        //Socialite
+        Laravel\Socialite\SocialiteServiceProvider::class,
         
     ],
 
@@ -239,6 +242,9 @@ return [
 
         //Spatie Laravel Menu
         'Menu' => Spatie\Menu\Laravel\MenuFacade::class,
+
+        //Socialite
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
 
     ],
 

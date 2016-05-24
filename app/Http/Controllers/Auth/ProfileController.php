@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
-
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Redirect;
@@ -39,10 +38,10 @@ class ProfileController extends Controller
     {
         $user=User::find($id);
 
-        if($user==null)
+        if ($user==null) {
             return Redirect::to('/home');
+        }
 
-        return view('auth/profile/edit')->with('id',$id);
-        
+        return view('auth/profile/edit')->with('id', $id);
     }
 }

@@ -2398,6 +2398,14 @@ input[type="search"] {
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
+  width: 30px;
+  height: 30px;
+}
+.checkbox_register {
+  position: relative;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 .radio label,
 .checkbox label {

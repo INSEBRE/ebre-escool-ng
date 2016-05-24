@@ -48,14 +48,22 @@
                     <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
                 </div>
                 <div class="row">
-                    <div class="col-xs-8">
-                        <div class="checkbox icheck">
-                            <label>
-                                <input type="checkbox" name="terms"> I agree to the <a href="#">terms</a>
-                            </label>
-                        </div>
+                    <div class="col-xs-1">
+                        <label>
+                            <div class="checkbox_register icheck">
+                                <label>
+                                    <input type="checkbox" name="terms">
+                                </label>
+                            </div>
+                        </label>
                     </div><!-- /.col -->
-                    <div class="col-xs-4">
+                    <div class="col-xs-6">
+                            <div class="form-group">
+                                <button type="button" class="btn btn-block btn-flat" data-toggle="modal" data-target="#termsModal">I agree to the terms</button>
+                                <input type="hidden" name="terms"/>
+                            </div>
+                    </div><!-- /.col -->
+                    <div class="col-xs-4 col-xs-push-1">
                         <button type="submit" class="btn btn-primary btn-block btn-flat">Register</button>
                     </div><!-- /.col -->
                 </div>
@@ -68,6 +76,8 @@
     </div><!-- /.register-box -->
 
     @include('layouts.partials.scripts_auth')
+
+    @include('auth.terms')
 
     <script>
         $(function () {

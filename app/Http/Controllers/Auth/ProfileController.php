@@ -43,5 +43,6 @@ class ProfileController extends Controller
             return Redirect::to('/home');
 
         return view('auth/profile/edit')->with('id',$id);
+        
     }
 }

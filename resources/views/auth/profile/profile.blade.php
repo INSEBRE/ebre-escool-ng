@@ -18,17 +18,74 @@
                             <hr>
                             <div class="row">
                                 <!-- left column -->
-                                <div class="col-md-3">
+                                <div class="col-md-4">
                                     <div class="text-center">
                                         <img src="{{Gravatar::get(Auth::loginUsingId(1)->email)}}" class="img-circle" alt="User Image" width="150px" height="150px"/><br>
-                                        {{ Auth::user()->name }}
+                                        {{ Auth::user()->name }} {{ Auth::user()->lastname }}
                                         {{--<h6>Upload a different photo...</h6>--}}
                                         {{--<input type="file" class="form-control">--}}
                                     </div>
+                                    <br>
+                                    <form class="form-horizontal" role="form">
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">User id:</label>
+                                            <div class="col-lg-8">
+                                                <input class="form-control" type="text" readonly="readonly" value="{{ Auth::user()->id }}">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">Username:</label>
+                                            <div class="col-lg-8">
+                                                <input class="form-control" type="text" readonly="readonly" value="{{ Auth::user()->username }}">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">Corporate Email:</label>
+                                            <div class="col-lg-8">
+                                                <input class="form-control" type="text" readonly="readonly" value="{{ Auth::user()->email}}">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">Address:</label>
+                                            <div class="col-lg-8">
+                                                <input class="form-control" type="text" readonly="readonly" value="{{ Auth::user()->address}}">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">Population:</label>
+                                            <div class="col-lg-8">
+                                                <input class="form-control" type="text" readonly="readonly" value="{{ Auth::user()->population}}">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">Date of birth:</label>
+                                            <div class="col-lg-8">
+                                                <input class="form-control" type="text" readonly="readonly" value="{{ Auth::user()->dateodbirth}}">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">Sex:</label>
+                                            <div class="col-lg-8">
+                                                <input class="form-control" type="text" readonly="readonly" value="{{ Auth::user()->sex}}">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">Phone:</label>
+                                            <div class="col-lg-8">
+                                                <input class="form-control" type="text" readonly="readonly" value="{{ Auth::user()->phone}}">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">Mobile:</label>
+                                            <div class="col-lg-8">
+                                                <input class="form-control" type="text" readonly="readonly" value="{{ Auth::user()->mobile}}">
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
 
                                 <!-- edit form column -->
-                                <div class="col-md-8 personal-info">
+                                <div class="col-md-7 personal-info">
                                     <form class="form-horizontal" role="form">
                                         <div class="form-group">
                                             <label class="col-lg-3 control-label">User id:</label>

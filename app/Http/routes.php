@@ -17,5 +17,6 @@ Route::get('/', function () {
 
 # Profile
 Route::get('/profile', [
-    'as' => 'profile', 'uses' => 'Auth\ProfileController@show'
+    'middleware' => 'auth',
+    'uses' => 'Auth\ProfileController@show'
 ]);

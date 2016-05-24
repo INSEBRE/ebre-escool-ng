@@ -13,7 +13,8 @@
         "satooshi/php-coveralls": "^1.0",
         "creativeorange/gravatar": "^1.0",
         "acacha/laravel-bootstrap": "dev-master",
-        "spatie/laravel-menu": "^1.2"
+        "spatie/laravel-menu": "^1.2",
+        "laravel/socialite": "^2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

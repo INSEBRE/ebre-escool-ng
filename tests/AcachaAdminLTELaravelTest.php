@@ -161,7 +161,8 @@ class AcachaAdminLTELaravelTest extends TestCase
     public function testNewUserRegistration()
     {
         $this->visit('/register')
-            ->type('Sergi Tur Badenas', 'name')
+            ->type('Sergi', 'name')
+            ->type('Tur Badenas', 'lastname')
             ->type('sergiturbadenas@gmail.com', 'email')
             ->check('terms')
             ->type('password', 'password')
@@ -170,8 +171,9 @@ class AcachaAdminLTELaravelTest extends TestCase
             ->seePageIs('/home')
             ->seeInDatabase('users',
                 [
-                    'email' => 'sergiturbadenas@gmail.com',
-                    'name'  => 'Sergi Tur Badenas'
+                    'email'     => 'sergiturbadenas@gmail.com',
+                    'name'      => 'Sergi',
+                    'lastname'  => 'Tur Badenas'
                 ]
             );
     }

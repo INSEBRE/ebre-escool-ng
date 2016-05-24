@@ -60,7 +60,7 @@
                     <div class="col-xs-6">
                             <div class="form-group">
                                 <button type="button" class="btn btn-block btn-flat" data-toggle="modal" data-target="#termsModal">I agree to the terms</button>
-                                <input type="hidden" name="terms"/>
+                                <input type="hidden"/>
                             </div>
                     </div><!-- /.col -->
                     <div class="col-xs-4 col-xs-push-1">

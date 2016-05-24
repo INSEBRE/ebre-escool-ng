@@ -11,6 +11,14 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function ()
+{
     return view('welcome');
+});
+
+
+Route::group(['middleware' => ['web']], function ()
+{
+    Route::get('auth/{provider}', 'Auth\AuthController@redirectToAuthenticationServiceProvider');
+    Route::get('auth/{provider}/callback', 'Auth\AuthController@handleAuthenticationServiceProviderCallback');
 });

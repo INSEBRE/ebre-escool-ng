@@ -3,6 +3,10 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use Illuminate\Support\Facades\Redirect;
+use Laravel\Socialite\Facades\Socialite;
+use Mockery\CountValidator\Exception;
+use Symfony\Component\Routing\Tests\Fixtures\RedirectableUrlMatcher;
 use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
@@ -69,5 +73,29 @@ class AuthController extends Controller
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
+    }
+
+    public function redirectToAuthenticationServiceProvider($provider)
+    {
+        return Socialite::driver($provider)->redirect();
+    }
+
+    public function handleAuthenticationServiceProviderCallback($provider)
+    {
+        try {
+            $user = Socialite::driver($provider)->user();
+        } catch (Exception $e) {
+            return Redirect::to('auth/' . $provider);
+        }
+
+        $authUser = $this->findOrCreateUser($user, $provider);
+        Auth::login($authUser, true);
+
+        return Redirect::to('home');
+    }
+
+    public function findOrCreateUser()
+    {
+        //
     }
 }

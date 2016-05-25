@@ -229,7 +229,7 @@
                     <div class="title-area">
                         <h2 class="tittle">Qui som?</h2>
                         <span class="tittle-line"></span>
-                        <p>Som tècnics de gra Superior d'Aplicacions Multiplataform</p>
+                        <p>Som tècnics de grau Superior d'Aplicacions Multiplataform</p>
                     </div>
                     <!-- Start team content -->
                     <div class="team-content">

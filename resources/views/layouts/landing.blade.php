@@ -272,6 +272,7 @@
                 </div>
             </div>
         </div>
+    </div>
 </section>
 <!-- Start Team action -->
 

@@ -20,3 +20,9 @@ Route::get('/profile', [
     'middleware' => 'auth',
     'uses' => 'Auth\ProfileController@show'
 ]);
+
+#Wizard
+Route::get('/wizard_plate', [
+    'middleware' => 'auth',
+    'uses' => 'WizardController@create'
+]);

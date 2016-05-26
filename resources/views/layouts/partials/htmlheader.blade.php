@@ -26,8 +26,11 @@
     <!-- Bootstrap time Picker -->
     <link href="{{ asset('/plugins/timepicker/bootstrap-timepicker.min.css') }}" rel="stylesheet" type="text/css"/>
     <!-- Select2 -->
-    <link href="{{ asset('/plugins/select2/select2.min.css') }}"/>
+    <link href="{{ asset('/plugins/select2/select2.min.css') }}" rel="stylesheet" type="text/css"/>
 
+    <!--Wizard -->
+    {{--<link href="{{ asset('/css/wizard/demo.css') }}" rel="stylesheet" type="text/css"/>--}}
+    <link href="{{ asset('/css/wizard/stepsForm.css') }}" rel="stylesheet" type="text/css"/>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

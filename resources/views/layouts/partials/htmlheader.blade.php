@@ -2,6 +2,8 @@
     <meta charset="UTF-8">
     <title> Intranet. Institut de l'Ebre - @yield('htmlheader_title', 'Your title here') </title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="{{ asset('/img/favicon.ico') }}"/>
     <!-- Bootstrap 3.3.4 -->
     <link href="{{ asset('/css/bootstrap.css') }}" rel="stylesheet" type="text/css" />
     <!-- Font Awesome Icons -->

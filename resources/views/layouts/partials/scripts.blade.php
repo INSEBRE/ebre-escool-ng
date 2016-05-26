@@ -6,8 +6,6 @@
 <script src="{{ asset('/js/bootstrap.min.js') }}" type="text/javascript"></script>
 <!-- AdminLTE App -->
 <script src="{{ asset('/js/app.min.js') }}" type="text/javascript"></script>
-
-<script src="{{ asset('/js/app.min.js') }}" type="text/javascript"></script>
 <!-- Select2 -->
 <script src="{{ asset('plugins/select2/select2.full.min.js') }}" type="text/javascript"></script>
 <!-- InputMask -->

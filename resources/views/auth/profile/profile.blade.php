@@ -14,164 +14,446 @@
                     <div class="panel-body">
                         <div class="container">
                             <h1>Personal Info</h1>
-                            <hr>
+                            <button  class="btn btn-primary col-xs-1 col-xs-offset-10">Edit</button>
                         </div>
+                        <hr>
                     </div>
                 </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-4">
 
                 <div class="box box-danger">
                     <div class="box-header">
-                        <h3 class="box-title">Input masks</h3>
+                        <h3 class="box-title">Important information</h3>
                     </div>
+                    <!-- /.form group -->
                     <div class="box-body">
-                        <!-- Date dd/mm/yyyy -->
                         <div class="form-group">
-                            <label>Date masks:</label>
-
-                            <div class="input-group">
-                                <div class="input-group-addon">
-                                    <i class="fa fa-calendar"></i>
-                                </div>
-                                <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'"
-                                       data-mask>
+                            <div class="input-group col-xs-offset-3">
+                                <img src="{{Gravatar::get(Auth::loginUsingId(1)->email)}}" class="img-circle"
+                                     alt="User Image" width="170px" height="170px" /><br>
+                            </div>
+                            <div class="text-center">
+                                {{ Auth::user()->name }} {{ Auth::user()->lastname }}
+                                <hr>
                             </div>
                             <!-- /.input group -->
                         </div>
-                        <!-- /.form group -->
-
-                        <!-- Date mm/dd/yyyy -->
-                        <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-addon">
-                                    <i class="fa fa-calendar"></i>
-                                </div>
-                                <input type="text" class="form-control" data-inputmask="'alias': 'mm/dd/yyyy'"
-                                       data-mask>
-                            </div>
-                            <!-- /.input group -->
-                        </div>
-                        <!-- /.form group -->
-
-                        <!-- phone mask -->
-                        <div class="form-group">
-                            <label>US phone mask:</label>
-
-                            <div class="input-group">
-                                <div class="input-group-addon">
-                                    <i class="fa fa-phone"></i>
-                                </div>
-                                <input type="text" class="form-control" data-inputmask='"mask": "(999) 999-9999"'
-                                       data-mask>
-                            </div>
-                            <!-- /.input group -->
-                        </div>
-                        <!-- /.form group -->
-
-                        <!-- phone mask -->
-                        <div class="form-group">
-                            <label>Intl US phone mask:</label>
-
-                            <div class="input-group">
-                                <div class="input-group-addon">
-                                    <i class="fa fa-phone"></i>
-                                </div>
-                                <input type="text" class="form-control"
-                                       data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']"
-                                       data-mask>
-                            </div>
-                            <!-- /.input group -->
-                        </div>
-                        <!-- /.form group -->
-
-                        <!-- IP mask -->
-                        <div class="form-group">
-                            <label>IP mask:</label>
-
-                            <div class="input-group">
-                                <div class="input-group-addon">
-                                    <i class="fa fa-laptop"></i>
-                                </div>
-                                <input type="text" class="form-control" data-inputmask="'alias': 'ip'" data-mask>
-                            </div>
-                            <!-- /.input group -->
-                        </div>
-                        <!-- /.form group -->
-
                     </div>
-                    <!-- /.box-body -->
-                </div>
-                <!-- /.box -->
+                    <!-- /.form group -->
+                    <div class="box-body">
+                        <div class="form-group">
+                            <!-- /.form group -->
+                            <div class="form-group">
+                                <label>User id:</label>
 
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-male"></i>
+                                    </div>
+                                    <input class="form-control" type="text" readonly="readonly"
+                                           value="{{ Auth::user()->id }}">
+                                </div>
+                                <!-- /.input group -->
+                            </div>
+                            <!-- /.form group -->
+                            <div class="form-group">
+                                <label>Username:</label>
+
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    <input class="form-control" type="text" readonly="readonly"
+                                           value="{{ Auth::user()->username }}">
+                                </div>
+                                <!-- /.input group -->
+                            </div>
+                            <!-- /.form group -->
+                            <div class="form-group">
+                                <label>Corporate email:</label>
+
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-envelope-o"></i>
+                                    </div>
+                                    <input class="form-control" type="text" readonly="readonly"
+                                           value="{{ Auth::user()->email }}">
+                                </div>
+                                <!-- /.input group -->
+                            </div>
+                            <!-- /.form group -->
+                            <div class="form-group">
+                                <label>Address:</label>
+
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-home"></i>
+                                    </div>
+                                    <input class="form-control" type="text" readonly="readonly"
+                                           value="{{ Auth::user()->address }}">
+                                </div>
+                                <!-- /.input group -->
+                            </div>
+                            <!-- /.form group -->
+
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <!-- /.box -->
+
+                </div>
             </div>
             <!-- /.col (left) -->
-            <div class="col-md-7">
-                <div class="box box-primary">
-                    <div class="box-header">
-                        <h3 class="box-title">Date picker</h3>
+            <div class="col-md-8">
+                <div class="nav-tabs-custom">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#UserInformation" data-toggle="tab">User Information</a></li>
+                        <li><a href="#PersonInformation" data-toggle="tab">Person Information</a></li>
+                        <li><a href="#AcademicInformation" data-toggle="tab">Academic Information</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="active tab-pane" id="UserInformation">
+                            <div class="box-body">
+                                <div class="form-group">
+                                    <!-- /.form group -->
+                                    <div class="form-group">
+                                        <label>User id:</label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-male"></i>
+                                            </div>
+                                            <input class="form-control" type="text" readonly="readonly"
+                                                   value="{{ Auth::user()->id }}">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <!-- /.form group -->
+                                    <div class="form-group">
+                                        <label>Username:</label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-user"></i>
+                                            </div>
+                                            <input class="form-control" type="text" readonly="readonly"
+                                                   value="{{ Auth::user()->username }}">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <!-- /.form group -->
+                                    <div class="form-group">
+                                        <label>Corporate email:</label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-envelope-o"></i>
+                                            </div>
+                                            <input class="form-control" type="text" readonly="readonly"
+                                                   value="{{ Auth::user()->email }}">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <!-- /.form group -->
+                                    <div class="form-group">
+                                        <label>Personal email 1:</label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-envelope-o"></i>
+                                            </div>
+                                            <input class="form-control" type="text" readonly="readonly"
+                                                   value="{{ Auth::user()->email }}">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <!-- /.form group -->
+                                    <div class="form-group">
+                                        <label>Personal email 2:</label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-envelope-o"></i>
+                                            </div>
+                                            <input class="form-control" type="text"
+                                                   value="{{ Auth::user()->email }}">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <!-- /.form group -->
+                                    <div class="form-group">
+                                        <label>Created at:</label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-clock-o"></i>
+                                            </div>
+                                            <input class="form-control" type="text" readonly="readonly"
+                                                   value="{{ Auth::user()->createdat }}">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <!-- /.form group -->
+                                    <div class="form-group">
+                                        <label>Updated at:</label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-clock-o"></i>
+                                            </div>
+                                            <input class="form-control" type="text" readonly="readonly"
+                                                   value="{{ Auth::user()->updatedat }}">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <!-- /.form group -->
+
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                        <!-- /.tab-pane -->
+                        <div class="tab-pane" id="PersonInformation">
+                            <div class="box-body">
+                                <div class="form-group">
+                                    <!-- /.form group -->
+                                    <div class="form-group">
+                                        <label>Person id:</label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-male"></i>
+                                            </div>
+                                            <input class="form-control" type="text" readonly="readonly"
+                                                   value="{{ Auth::user()->id }}">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <!-- /.form group -->
+                                    <div class="form-group">
+                                        <label>DNI/NIF/Passaport:</label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-credit-card"></i>
+                                            </div>
+                                            <input class="form-control" type="text" readonly="readonly"
+                                                   value="{{ Auth::user()->identifier }}">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <!-- /.form group -->
+                                    <div class="form-group">
+                                        <label>Personal identifier 2(Ex. TSI):</label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-credit-card"></i>
+                                            </div>
+                                            <input class="form-control" type="text" readonly="readonly"
+                                                   value="{{ Auth::user()->identifier2 }}">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <!-- /.form group -->
+                                    <div class="form-group">
+                                        <label>Name:</label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-user"></i>
+                                            </div>
+                                            <input class="form-control" type="text" readonly="readonly"
+                                                   value="{{ Auth::user()->name }}">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <!-- /.form group -->
+                                    <div class="form-group">
+                                        <label>First Surname:</label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-user"></i>
+                                            </div>
+                                            <input class="form-control" type="text" readonly="readonly"
+                                                   value="{{ Auth::user()->lastname }}">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <!-- /.form group -->
+                                    <div class="form-group">
+                                        <label>Second Surname:</label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-home"></i>
+                                            </div>
+                                            <input class="form-control" type="text" readonly="readonly"
+                                                   value="{{ Auth::user()->lastname }}">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <!-- /.form group -->
+                                    <!-- Date mm/dd/yyyy -->
+                                    <div class="form-group">
+                                        <label>Date of Birth:</label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                            <input type="text" class="form-control" readonly="readonly"
+                                                   data-inputmask="'alias': 'dd/mm/yyyy'"
+                                                   data-mask value="{{ Auth::user()->dateofbirth}}">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Population:</label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-map-marker"></i>
+                                            </div>
+                                            <input class="form-control" type="text" readonly="readonly"
+                                                   value="{{ Auth::user()->population}}">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <!-- /.form group -->
+                                    <div class="form-group">
+                                        <label>Address:</label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-home"></i>
+                                            </div>
+                                            <input class="form-control" type="text" readonly="readonly"
+                                                   value="{{ Auth::user()->address }}">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <!-- /.form group -->
+                                    <div class="form-group">
+                                        <label>Phone/Mobile:</label>
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-phone"></i>
+                                            </div>
+                                            <input class="form-control" type="text" readonly="readonly"
+                                                   value="{{ Auth::user()->phone }}">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-mobile"></i>
+                                            </div>
+                                            <input class="form-control" type="text" readonly="readonly"
+                                                   value="{{ Auth::user()->mobile }}">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <!-- /.form group -->
+
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                        <!-- /.tab-pane -->
+
+                        <div class="tab-pane" id="AcademicInformation">
+                            <div class="box-body">
+                                <div class="form-group">
+                                    <!-- /.form group -->
+                                    <div class="form-group">
+                                        <label>Organizational Unit:</label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-users"></i>
+                                            </div>
+                                            <input class="form-control" type="text" readonly="readonly"
+                                                   value="{{ Auth::user()->organizationalunit }}">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <!-- /.form group -->
+                                    <div class="form-group">
+                                        <label>Username:</label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-user"></i>
+                                            </div>
+                                            <input class="form-control" type="text" readonly="readonly"
+                                                   value="{{ Auth::user()->username }}">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <!-- /.form group -->
+                                    <div class="form-group">
+                                        <label>Course:</label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-briefcase"></i>
+                                            </div>
+                                            <input class="form-control" type="text" readonly="readonly"
+                                                   value="{{ Auth::user()->course }}">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <!-- /.form group -->
+                                    <div class="form-group">
+                                        <label>Module:</label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-leanpub"></i>
+                                            </div>
+                                            <input class="form-control" type="text" readonly="readonly"
+                                                   value="{{ Auth::user()->module }}">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <!-- /.form group -->
+                                    <div class="form-group">
+                                        <label>Group:</label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-slideshare"></i>
+                                            </div>
+                                            <input class="form-control" type="text" readonly="readonly"
+                                                   value="{{ Auth::user()->group }}">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <!-- /.form group -->
+                                    <div class="form-group">
+                                        <label>Description:</label>
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-pencil-square-o"></i>
+                                            </div>
+                                            <input class="form-control" type="text" readonly="readonly"
+                                                   value="{{ Auth::user()->description }}">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <!-- /.form group -->
+
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                        <!-- /.tab-pane -->
                     </div>
-                    <div class="box-body">
-                        <!-- Date -->
-                        <div class="form-group">
-                            <label>Date:</label>
-
-                            <div class="input-group date">
-                                <div class="input-group-addon">
-                                    <i class="fa fa-calendar"></i>
-                                </div>
-                                <input type="text" class="form-control pull-right" id="datepicker">
-                            </div>
-                            <!-- /.input group -->
-                        </div>
-                        <!-- /.form group -->
-
-                        <!-- Date range -->
-                        <div class="form-group">
-                            <label>Date range:</label>
-
-                            <div class="input-group">
-                                <div class="input-group-addon">
-                                    <i class="fa fa-calendar"></i>
-                                </div>
-                                <input type="text" class="form-control pull-right" id="reservation">
-                            </div>
-                            <!-- /.input group -->
-                        </div>
-                        <!-- /.form group -->
-
-                        <!-- Date and time range -->
-                        <div class="form-group">
-                            <label>Date and time range:</label>
-
-                            <div class="input-group">
-                                <div class="input-group-addon">
-                                    <i class="fa fa-clock-o"></i>
-                                </div>
-                                <input type="text" class="form-control pull-right" id="reservationtime">
-                            </div>
-                            <!-- /.input group -->
-                        </div>
-                        <!-- /.form group -->
-
-                        <!-- Date and time range -->
-                        <div class="form-group">
-                            <label>Date range button:</label>
-
-                            <div class="input-group">
-                                <button type="button" class="btn btn-default pull-right" id="daterange-btn">
-                    <span>
-                      <i class="fa fa-calendar"></i> Date range picker
-                    </span>
-                                    <i class="fa fa-caret-down"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- /.form group -->
-
-                    </div>
-                    <!-- /.box-body -->
+                    <!-- /.tab-content -->
                 </div>
+                <!-- /.nav-tabs-custom -->
             </div>
         </div>
     </div>

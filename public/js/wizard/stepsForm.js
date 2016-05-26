@@ -6,7 +6,7 @@
 					active			:0,
 					errormsg		:'Check faulty fields.',
 					sendbtntext		:'Create Account',
-					posturl			:'core/demo_steps_form.php',
+					posturl			:'/register',
 					theme			:'default'
 				};
 			var settings=$.extend(defaults,settings);

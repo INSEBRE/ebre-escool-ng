@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
 
 class WizardController extends Controller
@@ -13,7 +12,8 @@ class WizardController extends Controller
         $this->middleware('auth');
     }
 
-    public function create(){
+    public function create()
+    {
         return view('layouts.wizard');
     }
 }

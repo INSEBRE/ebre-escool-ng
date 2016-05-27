@@ -5,7 +5,7 @@
 @endsection
 
 @section('main-content')
-    <div class="container spark-screen">
+    <div class="spark-screen">
         <div class="row">
             <div class="col-md-12">
                 <div class="panel panel-default">
@@ -75,7 +75,7 @@
 
                                 <div class="input-group">
                                     <div class="input-group-addon">
-                                        <i class="fa fa-envelope-o"></i>
+                                        <i class="fa fa-at"></i>
                                     </div>
                                     <input class="form-control" type="text" readonly="readonly"
                                            value="{{ Auth::user()->email }}">
@@ -148,7 +148,7 @@
 
                                         <div class="input-group">
                                             <div class="input-group-addon">
-                                                <i class="fa fa-envelope-o"></i>
+                                                <i class="fa fa-at"></i>
                                             </div>
                                             <input class="form-control" type="text" readonly="readonly"
                                                    value="{{ Auth::user()->email }}">
@@ -161,7 +161,7 @@
 
                                         <div class="input-group">
                                             <div class="input-group-addon">
-                                                <i class="fa fa-envelope-o"></i>
+                                                <i class="fa fa-at"></i>
                                             </div>
                                             <input class="form-control" type="text" readonly="readonly"
                                                    value="{{ Auth::user()->email }}">
@@ -174,7 +174,7 @@
 
                                         <div class="input-group">
                                             <div class="input-group-addon">
-                                                <i class="fa fa-envelope-o"></i>
+                                                <i class="fa fa-at"></i>
                                             </div>
                                             <input class="form-control" type="text"
                                                    value="{{ Auth::user()->email }}">

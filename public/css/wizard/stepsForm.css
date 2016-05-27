@@ -155,8 +155,8 @@
 .stepsForm label.sf-select>select {
 	width: 100%;
 	
-	box-sizing: border-box;
-	padding: 1rem;
+	/*box-sizing: border-box;*/
+	/*padding: 1rem;*/
 	border: solid 1px #CCC;
 	outline: none;
 }
@@ -319,7 +319,6 @@
 .sf-align-right{
 	text-align:right;
 }
-
 .sf-align-center{
 	text-align:center;
 }
@@ -337,6 +336,12 @@
 
 .stepsForm .column_1 {
 	width: 16.666666667%;
+}
+.stepsForm .column_025 {
+	width: 25%;
+}
+.stepsForm .column_026 {
+	width: 26%;
 }
 .stepsForm .column_2 {
 	width: 33.333333334%;
@@ -536,4 +541,6 @@ box-shadow: 0px 0px 5px 0px rgba(31,181,174,1);
 .sf-theme-blue .sf-steps-navigation>button{
 	background:#3c8dbc;
 }
-
+.input-group-addon-1:not(:first-child):not(:last-child){
+	border-radius: 3px;
+}

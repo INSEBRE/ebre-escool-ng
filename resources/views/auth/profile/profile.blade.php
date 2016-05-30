@@ -29,14 +29,14 @@
                     <!-- /.form group -->
                     <div class="box-body">
                         <div class="form-group">
-                            <div class="input-group col-xs-offset-3">
+                            <div class="input-group col-xs-offset-22">
                                 <img src="{{Gravatar::get(Auth::loginUsingId(1)->email)}}" class="img-circle"
-                                     alt="User Image" width="170px" height="170px" /><br>
+                                     alt="User Image" width="165px" height="165px" /><br>
                             </div>
-                            <div class="text-center">
+                            <div class="col-xs-offset-30">
                                 {{ Auth::user()->name }} {{ Auth::user()->lastname }}
-                                <hr>
                             </div>
+                            <hr>
                             <!-- /.input group -->
                         </div>
                     </div>

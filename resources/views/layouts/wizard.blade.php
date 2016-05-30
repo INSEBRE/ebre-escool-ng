@@ -12,6 +12,16 @@
                     <div class="panel-heading">Wizard Plate</div>
                     <br>
                     <!--STEPS FORM START ------------ -->
+                    @if (count($errors) > 0)
+                        <div class="alert alert-danger">
+                            <strong>Whoops!</strong> There were some problems with your input.<br><br>
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                     <div class="stepsForm sf-theme-blue content">
                         <form method="post">
                             <div class="sf-steps">
@@ -56,9 +66,9 @@
                                                              alt="User Image" width="150px" height="150px"/>
                                                     </div>
                                                 </div>
-                                                <div class="col-xs-offset-3">
-                                                    {{ Auth::user()->name }} {{ Auth::user()->lastname }}
-                                                </div>
+                                                {{--<div class="col-xs-offset-3">--}}
+                                                    {{--{{ Auth::user()->name }} {{ Auth::user()->lastname }}--}}
+                                                {{--</div>--}}
                                                 <!-- /.input group -->
                                             </div>
                                         </div>
@@ -297,10 +307,10 @@
                                 <ul class="sf-content"> <!-- form step two -->
                                     <li>
                                         <div class="sf_columns column_3">
-                                            <label>User:</label>
+                                            <label>Period:</label>
                                             <label class="sf-select">
-                                                <select name="locality" class="form-control" data-required="true">
-                                                    <option value="username">Hello!!</option>
+                                                <select name="period" class="form-control" data-required="true">
+                                                    <option value="period">Hello!!</option>
                                                 </select>
                                                 <span></span>
                                             </label>
@@ -308,10 +318,13 @@
                                     </li>
                                     <li>
                                         <div class="sf_columns column_3">
-                                            <input type="password" placeholder="Password">
-                                        </div>
-                                        <div class="sf_columns column_3">
-                                            <input type="password" placeholder="Confirm Password" data-confirm="true">
+                                            <label>Student:</label>
+                                            <label class="sf-select">
+                                                <select name="student" class="form-control" data-required="true">
+                                                    <option value="username">{{ Auth::user()->name }}</option>
+                                                </select>
+                                                <span></span>
+                                            </label>
                                         </div>
                                     </li>
                                 </ul>
@@ -319,18 +332,74 @@
                                 <ul class="sf-content"> <!-- form step tree -->
                                     <li>
                                         <div class="sf_columns column_3">
-                                            <input type="text" placeholder="Phone" data-number="true">
-                                        </div>
-                                        <div class="sf_columns column_3">
-                                            <input type="text" placeholder="Extra">
+                                            <label>Study:</label>
+                                            <label class="sf-select">
+                                                <select name="study" class="form-control" data-required="true">
+                                                    <option value="study">SMX</option>
+                                                </select>
+                                                <span></span>
+                                            </label>
                                         </div>
                                     </li>
+                                </ul>
+
+                                <ul class="sf-content"> <!-- form step tree -->
                                     <li>
-                                        <div class="sf_columns column_6">
-                                            <div class="sf-check">
-                                                <label><input checked type="checkbox" value="true"
-                                                              name="accept"><span></span> Lorem Ipsum is simply dummy
-                                                    text of the printing and typesetting industry</label>
+                                        <div class="sf_columns column_3">
+                                            <label>Course:</label>
+                                            <label class="sf-select">
+                                                <select name="course" class="form-control" data-required="true">
+                                                    <option value="course">Course</option>
+                                                </select>
+                                                <span></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <ul class="sf-content"> <!-- form step tree -->
+                                    <li>
+                                        <div class="sf_columns column_3">
+                                            <label>Group Class:</label>
+                                            <label class="sf-select">
+                                                <select name="groupclass" class="form-control" data-required="true">
+                                                    <option value="groupclass">1r SMX A</option>
+                                                </select>
+                                                <span></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <ul class="sf-content"> <!-- form step tree -->
+                                    <li>
+                                        <div class="sf_columns column_3">
+                                            <label>Gender:</label>
+                                            <div class="sf-radio">
+                                                <label><input type="checkbox" value="M" name="gender"
+                                                              data-required="true"><span></span> Male</label>
+                                                <label><input type="checkbox" value="F" name="gender"
+                                                              data-required="true"><span></span> Female</label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <ul class="sf-content"> <!-- form step tree -->
+                                    <li>
+                                        <div class="sf_columns column_3">
+                                            <label>Gender:</label>
+                                            <div class="sf-radio">
+                                                <label><input type="radio" value="M" name="gender"
+                                                              data-required="true"><span></span> Male</label>
+                                                <label><input type="radio" value="F" name="gender"
+                                                              data-required="true"><span></span> Female</label>
+                                                              data-required="true"><span></span> Female</label>
+                                                <form>
+                                                    <input type="radio" name="gender" value="male" checked> Male<br>
+                                                    <input type="radio" name="gender" value="female"> Female<br>
+                                                    <input type="radio" name="gender" value="other"> Other
+                                                </form>
                                             </div>
                                         </div>
                                     </li>

@@ -24,24 +24,24 @@
 {{--<script src="{{ asset('js/wizard/jquery-2.1.1.min.js') }}" type="text/javascript" ></script>--}}
 <script src="{{ asset('js/wizard/stepsForm.js') }}" type="text/javascript" ></script>
 <script>
-    $(document).ready(function(e) {
-
-        $(".stepsForm").stepsForm({
-            width			:'100%',
-            active			:0,
-            errormsg		:'Check faulty fields.',
-            sendbtntext		:'Create Account',
-            posturl			:'core/demo_steps_form.php',
-            theme			:'green',
-        });
-
-        $(".container .themes>span").click(function(e) {
-            $(".container .themes>span").removeClass("selectedx");
-            $(this).addClass("selectedx");
-            $(".stepsForm").removeClass().addClass("stepsForm");
-            $(".stepsForm").addClass("sf-theme-"+$(this).attr("data-value"));
-        });
-    });
+//    $(document).ready(function(e) {
+//
+//        $(".stepsForm").stepsForm({
+//            width			:'100%',
+//            active			:0,
+//            //errormsg		:'Check faulty fields.',
+//            sendbtntext		:'Create Account',
+//            posturl			:'core/demo_steps_form.php',
+//            theme			:'green',
+//        });
+//
+//        $(".container .themes>span").click(function(e) {
+//            $(".container .themes>span").removeClass("selectedx");
+//            $(this).addClass("selectedx");
+//            $(".stepsForm").removeClass().addClass("stepsForm");
+//            $(".stepsForm").addClass("sf-theme-"+$(this).attr("data-value"));
+//        });
+//    });
 </script>
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.

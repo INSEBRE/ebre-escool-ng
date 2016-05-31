@@ -29,27 +29,24 @@
                                     <div>
                                         <span>1</span> Personal data
                                     </div>
-                                    {{--<div>--}}
-                                        {{--<span>2</span> Student--}}
-                                    {{--</div>--}}
                                     <div>
-                                        <span>3</span> Period
+                                        <span>2</span> Period
                                     </div>
                                     <div>
-                                        <span>4</span> Study
+                                        <span>3</span> Study
                                     </div>
                                     <div>
-                                        <span>5</span> Course
+                                        <span>4</span> Course
                                     </div>
                                     <div>
-                                        <span>6</span> Group Class
+                                        <span>5</span> Group Class
                                     </div>
                                     <div>
-                                        <span>7</span> Profesional Modules
+                                        <span>6</span> Profesional Modules
                                     </div>
 
                                     <div>
-                                        <span>8</span> Training Units
+                                        <span>7</span> Training Units
                                     </div>
                                 </div>
                             </div>
@@ -66,10 +63,10 @@
                                                              alt="User Image" width="150px" height="150px"/>
                                                     </div>
                                                 </div>
-                                                {{--<div class="col-xs-offset-3">--}}
-                                                    {{--{{ Auth::user()->name }} {{ Auth::user()->lastname }}--}}
-                                                {{--</div>--}}
-                                                <!-- /.input group -->
+                                            {{--<div class="col-xs-offset-3">--}}
+                                            {{--{{ Auth::user()->name }} {{ Auth::user()->lastname }}--}}
+                                            {{--</div>--}}
+                                            <!-- /.input group -->
                                             </div>
                                         </div>
                                         <br>
@@ -293,113 +290,247 @@
                                                    data-required="true">
                                         </div>
                                     </div>
-                                        <div class="sf_columns column_2">
-                                            <label>Gender:</label>
-                                            <div class="sf-radio">
-                                                <label><input type="radio" value="M" name="gender"
-                                                              data-required="true"><span></span> Male</label>
-                                                <label><input type="radio" value="F" name="gender"
-                                                              data-required="true"><span></span> Female</label>
-                                            </div>
+                                    <div class="sf_columns column_2">
+                                        <label>Gender:</label>
+                                        <div class="sf-radio">
+                                            <label><input type="radio" value="M" name="gender"
+                                                          data-required="true"><span></span> Male</label>
+                                            <label><input type="radio" value="F" name="gender"
+                                                          data-required="true"><span></span> Female</label>
                                         </div>
+                                    </div>
                                 </ul>
 
                                 <ul class="sf-content"> <!-- form step two -->
-                                    <li>
-                                        <div class="sf_columns column_3">
-                                            <label>Period:</label>
-                                            <label class="sf-select">
-                                                <select name="period" class="form-control" data-required="true">
-                                                    <option value="period">Hello!!</option>
-                                                </select>
-                                                <span></span>
-                                            </label>
+                                    <div class="box box-default">
+                                        <div class="box-header with-border">
+                                            <h3 class="box-title">Period - Student</h3>
+
+                                            <div class="box-tools pull-right">
+                                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                                                            class="fa fa-minus"></i></button>
+                                            </div>
                                         </div>
-                                    </li>
-                                    <li>
-                                        <div class="sf_columns column_3">
-                                            <label>Student:</label>
-                                            <label class="sf-select">
-                                                <select name="student" class="form-control" data-required="true">
-                                                    <option value="username">{{ Auth::user()->name }}</option>
-                                                </select>
-                                                <span></span>
-                                            </label>
+                                        <!-- /.box-header -->
+                                        <div class="box-body">
+                                            <div class="column_3">
+                                                <label>Period:</label>
+                                                <label class="sf-select">
+                                                    <select name="period" class="form-control"
+                                                            data-required="true">
+                                                        <option value="period">Hello!!</option>
+                                                    </select>
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                            <br>
+                                            <div class="column_3">
+                                                <label>Student:</label>
+                                                <label class="sf-select">
+                                                    <select name="student" class="form-control"
+                                                            data-required="true">
+                                                        <option value="username">{{ Auth::user()->name }}</option>
+                                                    </select>
+                                                    <span></span>
+                                                </label>
+                                            </div>
                                         </div>
-                                    </li>
+                                    </div>
                                 </ul>
 
                                 <ul class="sf-content"> <!-- form step tree -->
-                                    <li>
-                                        <div class="sf_columns column_3">
-                                            <label>Study:</label>
-                                            <label class="sf-select">
-                                                <select name="study" class="form-control" data-required="true">
-                                                    <option value="study">SMX</option>
-                                                </select>
-                                                <span></span>
-                                            </label>
+                                    <div class="box box-default">
+                                        <div class="box-header with-border">
+                                            <h3 class="box-title">Study</h3>
+
+                                            <div class="box-tools pull-right">
+                                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                                                            class="fa fa-minus"></i></button>
+                                            </div>
                                         </div>
-                                    </li>
+                                        <!-- /.box-header -->
+                                        <div class="box-body">
+                                            <div class="sf_columns column_3">
+                                                <label>Study:</label>
+                                                <label class="sf-select">
+                                                    <select name="study" class="form-control" data-required="true">
+                                                        <option value="study">SMX</option>
+                                                    </select>
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </ul>
 
                                 <ul class="sf-content"> <!-- form step tree -->
-                                    <li>
-                                        <div class="sf_columns column_3">
-                                            <label>Course:</label>
-                                            <label class="sf-select">
-                                                <select name="course" class="form-control" data-required="true">
-                                                    <option value="course">Course</option>
-                                                </select>
-                                                <span></span>
-                                            </label>
+                                    <div class="box box-default">
+                                        <div class="box-header with-border">
+                                            <h3 class="box-title">Study</h3>
+
+                                            <div class="box-tools pull-right">
+                                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                                                            class="fa fa-minus"></i></button>
+                                            </div>
                                         </div>
-                                    </li>
+                                        <!-- /.box-header -->
+                                        <div class="box-body">
+                                            <div class="sf_columns column_3">
+                                                <label>Course:</label>
+                                                <label class="sf-select">
+                                                    <select name="course" class="form-control" data-required="true">
+                                                        <option value="course">Course</option>
+                                                    </select>
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </ul>
 
                                 <ul class="sf-content"> <!-- form step tree -->
-                                    <li>
-                                        <div class="sf_columns column_3">
-                                            <label>Group Class:</label>
-                                            <label class="sf-select">
-                                                <select name="groupclass" class="form-control" data-required="true">
-                                                    <option value="groupclass">1r SMX A</option>
-                                                </select>
-                                                <span></span>
-                                            </label>
+                                    <div class="box box-default">
+                                        <div class="box-header with-border">
+                                            <h3 class="box-title">Group Class</h3>
+
+                                            <div class="box-tools pull-right">
+                                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                                                            class="fa fa-minus"></i></button>
+                                            </div>
                                         </div>
-                                    </li>
+                                        <!-- /.box-header -->
+                                        <div class="box-body">
+                                            <div class="sf_columns column_3">
+                                                <label>Group Class:</label>
+                                                <label class="sf-select">
+                                                    <select name="groupclass" class="form-control" data-required="true">
+                                                        <option value="groupclass">1r SMX A</option>
+                                                    </select>
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ul>
+
+                                <ul class="sf-content"> <!-- form step tree -->
+                                    <!-- box -->
+                                    <div class="box box-default">
+                                        <div class="box-header with-border">
+                                            <h3 class="box-title">1SMX - Curs 1 - SMX</h3>
+
+                                            <div class="box-tools pull-right">
+                                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                                                            class="fa fa-minus"></i></button>
+                                            </div>
+                                        </div>
+                                        <!-- /.box-header -->
+                                        <div class="box-body">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="sf-check">
+                                                        <label><input type="checkbox" value="M"
+                                                                      name="gender"><span></span></label>MP01 - Muntatge
+                                                        i manteniment d'equis
+                                                        <br>
+                                                        <label><input type="checkbox" value="F"
+                                                                      name="gender"><span></span></label>MP02 - Sistemes
+                                                        operatius monolloc
+                                                        <br>
+                                                        <label><input type="checkbox" value="F"
+                                                                      name="gender"><span></span></label>MP03 -
+                                                        Aplicacions ofimàtiques
+                                                        <br>
+                                                        <label><input type="checkbox" value="F"
+                                                                      name="gender"><span></span></label>MP05 - Xarxes
+                                                        locals
+                                                        <br>
+                                                        <label><input type="checkbox" value="F"
+                                                                      name="gender"><span></span></label>MP09 - Formació
+                                                        i orientació laboral
+                                                        <br>
+                                                        <label><input type="checkbox" value="F"
+                                                                      name="gender"><span></span></label>MP11 - Angès
+                                                        <br>
+                                                    </div>
+                                                </div>
+                                                <!-- /.col -->
+                                            </div>
+                                            <!-- /.row -->
+                                        </div>
+                                        <!-- /.box-body -->
+                                    </div>
+                                    <!-- /.box -->
+
+                                    <!-- box -->
+                                    <div class="box box-default">
+                                        <div class="box-header with-border">
+                                            <h3 class="box-title">2SMX - Curs 2 - SMX</h3>
+
+                                            <div class="box-tools pull-right">
+                                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                                                            class="fa fa-minus"></i></button>
+                                            </div>
+                                        </div>
+                                        <!-- /.box-header -->
+                                        <div class="box-body">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="sf-check">
+                                                        <label><input type="checkbox" value="M"
+                                                                      name="gender"><span></span></label>MP04 - Muntatge
+                                                        i manteniment d'equis
+                                                        <br>
+
+                                                        <label><input type="checkbox" value="F"
+                                                                      name="gender"><span></span></label>MP06 - Sistemes
+                                                        operatius monolloc
+                                                        <br>
+
+                                                        <label><input type="checkbox" value="F"
+                                                                      name="gender"><span></span></label>MP07 -
+                                                        Aplicacions ofimàtiques
+                                                        <br>
+
+                                                        <label><input type="checkbox" value="F"
+                                                                      name="gender"><span></span></label>MP08 - Xarxes
+                                                        locals
+                                                        <br>
+
+                                                        <label><input type="checkbox" value="F"
+                                                                      name="gender"><span></span></label>MP10 - Formació
+                                                        i orientació laboral
+                                                        <br>
+
+                                                        <label><input type="checkbox" value="F"
+                                                                      name="gender"><span></span></label>MP12 - Angès
+                                                        <br>
+
+                                                        <label><input type="checkbox" value="F"
+                                                                      name="gender"><span></span></label>MP13 - Formació
+                                                        en centres de treball
+                                                        <br>
+
+                                                    </div>
+                                                </div>
+                                                <!-- /.col -->
+                                            </div>
+                                            <!-- /.row -->
+                                        </div>
+                                        <!-- /.box-body -->
+                                    </div>
+                                    <!-- /.box -->
                                 </ul>
 
                                 <ul class="sf-content"> <!-- form step tree -->
                                     <li>
                                         <div class="sf_columns column_3">
                                             <label>Gender:</label>
-                                            <div class="sf-radio">
+                                            <div class="sf-check">
                                                 <label><input type="checkbox" value="M" name="gender"
                                                               data-required="true"><span></span> Male</label>
                                                 <label><input type="checkbox" value="F" name="gender"
                                                               data-required="true"><span></span> Female</label>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                                <ul class="sf-content"> <!-- form step tree -->
-                                    <li>
-                                        <div class="sf_columns column_3">
-                                            <label>Gender:</label>
-                                            <div class="sf-radio">
-                                                <label><input type="radio" value="M" name="gender"
-                                                              data-required="true"><span></span> Male</label>
-                                                <label><input type="radio" value="F" name="gender"
-                                                              data-required="true"><span></span> Female</label>
-                                                              data-required="true"><span></span> Female</label>
-                                                <form>
-                                                    <input type="radio" name="gender" value="male" checked> Male<br>
-                                                    <input type="radio" name="gender" value="female"> Female<br>
-                                                    <input type="radio" name="gender" value="other"> Other
-                                                </form>
                                             </div>
                                         </div>
                                     </li>

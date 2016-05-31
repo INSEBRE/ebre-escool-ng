@@ -10,7 +10,6 @@ use Illuminate\Support\Facades\Hash;
  */
 class AcachaAdminLTELaravelTest extends TestCase
 {
-
     use DatabaseMigrations;
 
     /**

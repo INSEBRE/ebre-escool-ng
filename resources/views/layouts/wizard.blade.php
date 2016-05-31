@@ -459,8 +459,6 @@
                                             <!-- /.row -->
                                         </div>
                                         <!-- /.box-body -->
-                                    </div>
-                                    <!-- /.box -->
 
                                     <!-- box -->
                                     <div class="box box-default">
@@ -520,20 +518,153 @@
                                         <!-- /.box-body -->
                                     </div>
                                     <!-- /.box -->
+
+                                    </div>
+                                    <!-- /.box -->
                                 </ul>
 
                                 <ul class="sf-content"> <!-- form step tree -->
-                                    <li>
-                                        <div class="sf_columns column_3">
-                                            <label>Gender:</label>
-                                            <div class="sf-check">
-                                                <label><input type="checkbox" value="M" name="gender"
-                                                              data-required="true"><span></span> Male</label>
-                                                <label><input type="checkbox" value="F" name="gender"
-                                                              data-required="true"><span></span> Female</label>
+                                    <!-- box -->
+                                    <div class="box ">
+                                        <div class="box-header">
+                                            <h3 class="box-title">1SMX - Curs 1 - SMX</h3>
+
+                                            <div class="box-tools pull-right">
+                                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                                                            class="fa fa-minus"></i></button>
                                             </div>
                                         </div>
-                                    </li>
+                                        <!-- /.box-header -->
+                                        <div class="box-body">
+                                            <div class="col-md-12">
+                                                <!-- box -->
+                                                <div class="box box-danger">
+                                                    <div class="box-header">
+                                                        <h3 class="box-title">MP01 - Muntage i manteniments
+                                                            d'equips</h3>
+
+                                                        <div class="box-tools pull-right">
+                                                            <button type="button" class="btn btn-box-tool"
+                                                                    data-widget="collapse"><i
+                                                                        class="fa fa-minus"></i></button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.box-header -->
+                                                    <div class="box-body">
+                                                        <div class="col-md-5">
+                                                            <div class="sf-check">
+                                                                <label><input type="checkbox" value="M"
+                                                                              name="gender"><span></span></label>UF1
+                                                                - Electricitat a l'ordinador
+                                                                <br>
+                                                                <label><input type="checkbox" value="F"
+                                                                              name="gender"><span></span></label>UF2
+                                                                - Components d'un equip Informàtic
+                                                                <br>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /.col -->
+                                                    </div>
+                                                    <!-- /.box-body -->
+                                                </div>
+                                                <!-- /.box -->
+                                            </div>
+                                            <!-- /.col -->
+                                        </div>
+                                        <!-- /.box-body -->
+
+                                    <!-- /.box-header -->
+                                    <div class="box-body">
+                                        <div class="col-md-12">
+                                            <!-- box -->
+                                            <div class="box box-danger">
+                                                <div class="box-header">
+                                                    <h3 class="box-title">MP02 - Muntage i manteniments
+                                                        d'equips</h3>
+
+                                                    <div class="box-tools pull-right">
+                                                        <button type="button" class="btn btn-box-tool"
+                                                                data-widget="collapse"><i
+                                                                    class="fa fa-minus"></i></button>
+                                                    </div>
+                                                </div>
+                                                <!-- /.box-header -->
+                                                <div class="box-body">
+                                                    <div class="col-md-5">
+                                                        <div class="sf-check">
+                                                            <label><input type="checkbox" value="M"
+                                                                          name="gender"><span></span></label>UF1
+                                                            - Electricitat a l'ordinador
+                                                            <br>
+                                                            <label><input type="checkbox" value="F"
+                                                                          name="gender"><span></span></label>UF2
+                                                            - Components d'un equip Informàtic
+                                                            <br>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.col -->
+                                                </div>
+                                                <!-- /.box-body -->
+                                            </div>
+                                            <!-- /.box -->
+                                        </div>
+                                        <!-- /.col -->
+                                    </div>
+                                    <!-- /.box-body -->
+                                    </div>
+                                    <!-- /.box -->
+
+                                    <!-- box -->
+                                    <div class="box box-default">
+                                        <div class="box-header">
+                                            <h3 class="box-title">1SMX - Curs 1 - SMX</h3>
+
+                                            <div class="box-tools pull-right">
+                                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                                                            class="fa fa-minus"></i></button>
+                                            </div>
+                                        </div>
+                                        <!-- /.box-header -->
+                                        <div class="box-body">
+                                            <div class="col-md-12">
+                                                <!-- box -->
+                                                <div class="box box-danger">
+                                                    <div class="box-header">
+                                                        <h3 class="box-title">MP01 - Muntage i manteniments
+                                                            d'equips</h3>
+
+                                                        <div class="box-tools pull-right">
+                                                            <button type="button" class="btn btn-box-tool"
+                                                                    data-widget="collapse"><i
+                                                                        class="fa fa-minus"></i></button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.box-header -->
+                                                    <div class="box-body">
+                                                        <div class="col-md-5">
+                                                            <div class="sf-check">
+                                                                <label><input type="checkbox" value="M"
+                                                                              name="gender"><span></span></label>UF1
+                                                                - Electricitat a l'ordinador
+                                                                <br>
+                                                                <label><input type="checkbox" value="F"
+                                                                              name="gender"><span></span></label>UF2
+                                                                - Components d'un equip Informàtic
+                                                                <br>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /.col -->
+                                                    </div>
+                                                    <!-- /.box-body -->
+                                                </div>
+                                                <!-- /.box -->
+                                            </div>
+                                            <!-- /.col -->
+                                        </div>
+                                        <!-- /.box-body -->
+                                    </div>
+                                    <!-- /.box -->
+
                                 </ul>
                             </div>
 
